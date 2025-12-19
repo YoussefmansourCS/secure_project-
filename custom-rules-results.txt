@@ -1,0 +1,43 @@
+                   
+                   
+┌─────────────────┐
+│ 3 Code Findings │
+└─────────────────┘
+                                                
+  [36m[22m[24m  src\router\routes\frontend.js[0m
+   ❯❯❱ semgrep-rules.register-without-auth
+          V1: /register endpoint accessible without authentication
+                                                                  
+           36┆ app.get('/register', (req,res) =>{
+           37┆
+           38┆    const nunjucks = require('nunjucks')
+           39┆    const message = req.query.message || "Please log in to continue"
+           40┆    rendered = nunjucks.renderString(message);
+           41┆    res.render('user-register.html',
+           42┆    {message : rendered});
+           43┆
+           44┆
+           45┆    // res.render('user',{
+             [hid 5 additional lines, adjust with --max-lines-per-finding] 
+   
+   ❯❯❱ semgrep-rules.authentication-via-get
+          V3: Authentication via GET method - credentials exposed in URLs
+                                                                         
+          110┆ app.get('/login', (req,res) =>{
+          111┆    var userEmail = req.query.email;
+          112┆    var userPassword = req.query.password;
+          113┆    console.log(req.query.message)
+          114┆    const user = db.user.findAll({
+          115┆    where: {
+          116┆        email: userEmail
+          117┆    }}).then(user => {
+          118┆        if(user.length == 0){
+          119┆            res.redirect('/?message=Password was not found! Please Try again')
+             [hid 14 additional lines, adjust with --max-lines-per-finding] 
+                                
+  [36m[22m[24m  src\server.js[0m
+    ❯❱ semgrep-rules.missing-helmet
+          V6: Express application detected - check if helmet() middleware is used for security headers
+                                                                                                      
+           17┆ const app = express()
+

@@ -1,0 +1,3845 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ZAP by Checkmarx Scanning Report</title>
+<link
+	href="2025-12-17-ZAP-Report-/normalize/normalize.css" rel="stylesheet">
+<link
+	href="2025-12-17-ZAP-Report-/themes/original/main.css" rel="stylesheet">
+<link
+	href="2025-12-17-ZAP-Report-/themes/original/colors.css" rel="stylesheet">
+</head>
+<body>
+	<header>
+		<h1>ZAP by Checkmarx Scanning Report</h1>
+		<p>
+			<span>Generated with</span> <a href="https://zaproxy.org"><img
+				src="2025-12-17-ZAP-Report-/zap32x32.png" alt="The ZAP logo" class="zap-logo">ZAP</a>
+			<span>on Wed 17 Dec 2025, at 14:13:25</span>
+		</p>
+		<p>ZAP Version: 2.17.0</p>
+		<p>
+			ZAP by <a href="https://checkmarx.com/">Checkmarx</a>
+		</p>
+	</header>
+
+	<main>
+
+		<section id="contents" class="contents">
+			<h2>Contents</h2>
+			<nav>
+				<ol>
+					<li><a
+						href="#about-this-report">About This Report</a>
+						<ol>
+							
+							<li><a
+								href="#report-parameters">Report Parameters</a></li>
+						</ol></li>
+					<data-th-block>
+					<li><a
+						href="#summaries">Summaries</a>
+						<ol>
+							<li><a
+								href="#risk-confidence-counts">Alert Counts by Risk and Confidence</a></li>
+							<li><a
+								href="#site-risk-counts">Alert Counts by Site and Risk</a></li>
+							<li><a
+								href="#alert-type-counts">Alert Counts by Alert Type</a></li>
+							<li><a
+								href="#insights">Insights</a></li>
+						</ol></li>
+					<li><a
+						href="#alerts">Alerts</a>
+						<ol>
+							
+							 
+							
+							
+							
+							
+							<li><a
+								href="#alerts--risk-2-confidence-3"><span>Risk</span>=<span
+									class="risk-level">Medium</span>, <span>Confidence</span>=<span
+									class="confidence-level">High</span> <span>(3)</span></a></li>
+							
+							<li><a
+								href="#alerts--risk-2-confidence-2"><span>Risk</span>=<span
+									class="risk-level">Medium</span>, <span>Confidence</span>=<span
+									class="confidence-level">Medium</span> <span>(2)</span></a></li>
+							
+							
+							  
+							
+							
+							
+							
+							
+							
+							<li><a
+								href="#alerts--risk-1-confidence-2"><span>Risk</span>=<span
+									class="risk-level">Low</span>, <span>Confidence</span>=<span
+									class="confidence-level">Medium</span> <span>(4)</span></a></li>
+							
+							
+							  
+							
+							
+							
+							
+							
+							
+							<li><a
+								href="#alerts--risk-0-confidence-2"><span>Risk</span>=<span
+									class="risk-level">Informational</span>, <span>Confidence</span>=<span
+									class="confidence-level">Medium</span> <span>(1)</span></a></li>
+							
+							<li><a
+								href="#alerts--risk-0-confidence-1"><span>Risk</span>=<span
+									class="risk-level">Informational</span>, <span>Confidence</span>=<span
+									class="confidence-level">Low</span> <span>(1)</span></a></li>
+							  
+						</ol></li>
+					<li><a
+						href="#appendix">Appendix</a>
+						<ol>
+							<li><a
+								href="#alert-types">Alert Types</a></li>
+						</ol></li>
+					</data-th-block>
+				</ol>
+			</nav>
+		</section>
+
+		<section
+			id="about-this-report" class="about-this-report">
+			<h2>About This Report</h2>
+
+			
+
+			<section
+				id="report-parameters">
+				<h3>Report Parameters</h3>
+				<div class="report-parameters--container">
+					<h4>Contexts</h4>
+					
+					
+					<p>No contexts were selected, so all contexts were included by default.</p>
+					  
+
+					<h4>Sites</h4>
+					
+					<p>The following sites were included:</p>
+					<ul class="sites-list">
+						<li><span class="site">https://localhost:5000</span></li>
+						<li><span class="site">http://localhost:5000</span></li>
+					</ul>
+					
+					<p>(If no sites were selected, all sites were included by default.)</p>
+					<p>An included site must also be within one of the included contexts for its data to be included in the report.</p>
+
+					<h4>Risk levels</h4>
+					<p>
+						<span>Included</span>:
+						 
+						<span class="included-risk-codes"><span class="risk-level">High</span>, <span class="risk-level">Medium</span>, <span class="risk-level">Low</span>, <span class="risk-level">Informational</span></span>
+					</p>
+					<p>
+						<span>Excluded</span>:
+						 <span>None</span>
+						
+					</p>
+
+					<h4>Confidence levels</h4>
+					<p>
+						<span>Included</span>:
+						
+						
+						<span class="included-confidence-codes"><span class="confidence-level">User Confirmed</span>, <span class="confidence-level">High</span>, <span class="confidence-level">Medium</span>, <span class="confidence-level">Low</span></span>
+					</p>
+					<p>
+						<span>Excluded</span>:
+						
+						
+						<span class="included-confidence-codes"> <span class="confidence-level">User Confirmed</span>, <span class="confidence-level">High</span>, <span class="confidence-level">Medium</span>, <span class="confidence-level">Low</span>, <span class="confidence-level">False Positive</span></span>
+					</p>
+				</div>
+			</section>
+		</section>
+
+		
+		<section>
+			
+		</section>
+		
+		<section id="summaries" class="summaries">
+			<h2>Summaries</h2>
+
+			<section
+				id="risk-confidence-counts">
+				<h3>Alert Counts by Risk and Confidence</h3>
+				<table class="risk-confidence-counts-table">
+					<caption>
+						<p>This table shows the number of alerts for each level of risk and confidence included in the report.</p>
+						<p>(The percentages in brackets represent the count as a percentage of the total number of alerts included in the report, rounded to one decimal place.)</p>
+					</caption>
+					<colgroup>
+						<col>
+						<col>
+					</colgroup>
+					<colgroup>
+						<col
+							style="width: 14.0%"><col
+							style="width: 14.0%"><col
+							style="width: 14.0%"><col
+							style="width: 14.0%">
+						<col style="width: 14.0%">
+					</colgroup>
+					<thead>
+						<tr>
+							<td colspan="2" rowspan="2"></td>
+							<th scope="colgroup"
+								colspan="5">Confidence</th>
+						</tr>
+						<tr>
+							<th scope="col">User Confirmed</th>
+							<th scope="col">High</th>
+							<th scope="col">Medium</th>
+							<th scope="col">Low</th>
+							<th scope="col">Total</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<th scope="rowgroup"
+								rowspan="5">Risk</th>
+							<th scope="row">High</th>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0.0%)</span></td>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0.0%)</span></td>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0.0%)</span></td>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0.0%)</span></td>
+							<td><span>0</span><br> <span class="additional-info-percentages">(0.0%)</span></td>
+						</tr>
+						<tr>
+							
+							<th scope="row">Medium</th>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0.0%)</span></td>
+							<td><span>3</span><br> <span
+								class="additional-info-percentages">(27.3%)</span></td>
+							<td><span>2</span><br> <span
+								class="additional-info-percentages">(18.2%)</span></td>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0.0%)</span></td>
+							<td><span>5</span><br> <span class="additional-info-percentages">(45.5%)</span></td>
+						</tr>
+						<tr>
+							
+							<th scope="row">Low</th>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0.0%)</span></td>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0.0%)</span></td>
+							<td><span>4</span><br> <span
+								class="additional-info-percentages">(36.4%)</span></td>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0.0%)</span></td>
+							<td><span>4</span><br> <span class="additional-info-percentages">(36.4%)</span></td>
+						</tr>
+						<tr>
+							
+							<th scope="row">Informational</th>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0.0%)</span></td>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0.0%)</span></td>
+							<td><span>1</span><br> <span
+								class="additional-info-percentages">(9.1%)</span></td>
+							<td><span>1</span><br> <span
+								class="additional-info-percentages">(9.1%)</span></td>
+							<td><span>2</span><br> <span class="additional-info-percentages">(18.2%)</span></td>
+						</tr>
+						<tr>
+							<th scope="row">Total</th>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0.0%)</span></td>
+							<td><span>3</span><br> <span
+								class="additional-info-percentages">(27.3%)</span></td>
+							<td><span>7</span><br> <span
+								class="additional-info-percentages">(63.6%)</span></td>
+							<td><span>1</span><br> <span
+								class="additional-info-percentages">(9.1%)</span></td>
+							<td><span>11</span><br> <span
+								class="additional-info-percentages">(100%)</span></td>
+						</tr>
+					</tbody>
+				</table>
+			</section>
+
+			<section
+				id="site-risk-counts">
+				<h3>Alert Counts by Site and Risk</h3>
+				<table class="site-risk-counts-table">
+					<caption>
+						<p>This table shows, for each site for which one or more alerts were raised, the number of alerts raised at each risk level.</p>
+						<p>Alerts with a confidence level of &quot;False Positive&quot; have been excluded from these counts.</p>
+						<p>(The numbers in brackets are the number of alerts raised for the site at or above that risk level.)</p>
+					</caption>
+					<colgroup>
+						<col>
+						<col>
+					</colgroup>
+					<colgroup>
+						<col
+							style="width: 16.25%"><col
+							style="width: 16.25%"><col
+							style="width: 16.25%"><col
+							style="width: 16.25%">
+					</colgroup>
+					<thead>
+						<tr>
+							<td colspan="2" rowspan="2"></td>
+							<th scope="colgroup" colspan="4">Risk</th>
+						</tr>
+						<tr>
+							<th scope="col">
+								<span>High</span><br>  <span
+									class="additional-info-percentages">(= High)</span>  
+							</th>
+							<th scope="col">
+								<span>Medium</span><br>   <span
+									class="additional-info-percentages">(&gt;= Medium)</span> 
+							</th>
+							<th scope="col">
+								<span>Low</span><br>   <span
+									class="additional-info-percentages">(&gt;= Low)</span> 
+							</th>
+							<th scope="col">
+								<span>Informational</span><br>   <span
+									class="additional-info-percentages">(&gt;= Informational)</span> 
+							</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<th scope="rowgroup"
+								rowspan="2">Site</th>
+							<th scope="row">https://localhost:5000</th>
+							
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0)</span></td>
+							<td><span>1</span><br> <span
+								class="additional-info-percentages">(1)</span></td>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(1)</span></td>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(1)</span></td>
+							
+						</tr>
+						<tr>
+							
+							<th scope="row">http://localhost:5000</th>
+							
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0)</span></td>
+							<td><span>4</span><br> <span
+								class="additional-info-percentages">(4)</span></td>
+							<td><span>4</span><br> <span
+								class="additional-info-percentages">(8)</span></td>
+							<td><span>2</span><br> <span
+								class="additional-info-percentages">(10)</span></td>
+							
+						</tr>
+					</tbody>
+				</table>
+			</section>
+
+			<section
+				id="alert-type-counts">
+				<h3>Alert Counts by Alert Type</h3>
+				<table class="alert-type-counts-table">
+					<caption>
+						<p>This table shows the number of alerts of each alert type, together with the alert type&#39;s risk level.</p>
+						<p>(The percentages in brackets represent each count as a percentage, rounded to one decimal place, of the total number of alerts included in this report.)</p>
+					</caption>
+					<thead>
+						<tr>
+							<th scope="col">Alert type</th>
+							<th scope="col">Risk</th>
+							<th scope="col">Count</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<th scope="row"><a
+								href="#alert-type-0">CSP: Failure to Define Directive with No Fallback</a></th>
+							<td class="risk-level">Medium</td>
+							<td><span>4</span><br> <span
+								class="additional-info-percentages">(36.4%)</span></td>
+						</tr>
+						<tr>
+							<th scope="row"><a
+								href="#alert-type-1">Content Security Policy (CSP) Header Not Set</a></th>
+							<td class="risk-level">Medium</td>
+							<td><span>2</span><br> <span
+								class="additional-info-percentages">(18.2%)</span></td>
+						</tr>
+						<tr>
+							<th scope="row"><a
+								href="#alert-type-2">HTTP Only Site</a></th>
+							<td class="risk-level">Medium</td>
+							<td><span>1</span><br> <span
+								class="additional-info-percentages">(9.1%)</span></td>
+						</tr>
+						<tr>
+							<th scope="row"><a
+								href="#alert-type-3">Missing Anti-clickjacking Header</a></th>
+							<td class="risk-level">Medium</td>
+							<td><span>2</span><br> <span
+								class="additional-info-percentages">(18.2%)</span></td>
+						</tr>
+						<tr>
+							<th scope="row"><a
+								href="#alert-type-4">Sub Resource Integrity Attribute Missing</a></th>
+							<td class="risk-level">Medium</td>
+							<td><span>4</span><br> <span
+								class="additional-info-percentages">(36.4%)</span></td>
+						</tr>
+						<tr>
+							<th scope="row"><a
+								href="#alert-type-5">Cookie No HttpOnly Flag</a></th>
+							<td class="risk-level">Low</td>
+							<td><span>3</span><br> <span
+								class="additional-info-percentages">(27.3%)</span></td>
+						</tr>
+						<tr>
+							<th scope="row"><a
+								href="#alert-type-6">Cross-Domain JavaScript Source File Inclusion</a></th>
+							<td class="risk-level">Low</td>
+							<td><span>2</span><br> <span
+								class="additional-info-percentages">(18.2%)</span></td>
+						</tr>
+						<tr>
+							<th scope="row"><a
+								href="#alert-type-7">Server Leaks Information via &quot;X-Powered-By&quot; HTTP Response Header Field(s)</a></th>
+							<td class="risk-level">Low</td>
+							<td><span>5</span><br> <span
+								class="additional-info-percentages">(45.5%)</span></td>
+						</tr>
+						<tr>
+							<th scope="row"><a
+								href="#alert-type-8">X-Content-Type-Options Header Missing</a></th>
+							<td class="risk-level">Low</td>
+							<td><span>5</span><br> <span
+								class="additional-info-percentages">(45.5%)</span></td>
+						</tr>
+						<tr>
+							<th scope="row"><a
+								href="#alert-type-9">Information Disclosure - Suspicious Comments</a></th>
+							<td class="risk-level">Informational</td>
+							<td><span>7</span><br> <span
+								class="additional-info-percentages">(63.6%)</span></td>
+						</tr>
+						<tr>
+							<th scope="row"><a
+								href="#alert-type-10">Session Management Response Identified</a></th>
+							<td class="risk-level">Informational</td>
+							<td><span>4</span><br> <span
+								class="additional-info-percentages">(36.4%)</span></td>
+						</tr>
+					</tbody>
+					<tfoot>
+						<tr>
+							<th scope="row">Total</th>
+							<td></td>
+							<td>11</td>
+						</tr>
+					</tfoot>
+				</table>
+			</section>
+			
+			<section
+				id="insights">
+				<h3 class="left-header">Insights</h3>
+				<table class="insights-table">
+						<caption>
+						<p>This table shows information that is likely to be very relevant to you, but which is not related to vulnerabilities, or potentially even related to the application in question.</p>
+					</caption>
+					<thead>
+					<tr>
+						<th scope="col">Level</th>
+						<th scope="col">Reason</th>
+						<th scope="col">Site</th>
+						<th scope="col">Description</th>
+						<th scope="col">Statistic</th>
+					</tr>
+					</thead>
+					<tbody>
+					
+						<tr>
+						<td class="risk-2">
+							<div>Medium</div>
+						</td>
+						<td>
+							<div>Exceeded High</div>
+						</td>
+						<td>
+							<div></div>
+						</td>
+						<td>
+							<div>Percentage of network failures</div>
+						</td>
+						<td align="center">
+							<div>96 %</div>
+						</td>
+						</tr>
+					
+						<tr>
+						<td class="risk-1">
+							<div>Low</div>
+						</td>
+						<td>
+							<div>Warning</div>
+						</td>
+						<td>
+							<div></div>
+						</td>
+						<td>
+							<div>ZAP errors logged - see the zap.log file for details</div>
+						</td>
+						<td align="center">
+							<div>1   </div>
+						</td>
+						</tr>
+					
+						<tr>
+						<td class="risk-1">
+							<div>Low</div>
+						</td>
+						<td>
+							<div>Warning</div>
+						</td>
+						<td>
+							<div></div>
+						</td>
+						<td>
+							<div>ZAP warnings logged - see the zap.log file for details</div>
+						</td>
+						<td align="center">
+							<div>900   </div>
+						</td>
+						</tr>
+					
+						<tr>
+						<td class="risk-0">
+							<div>Info</div>
+						</td>
+						<td>
+							<div>Informational</div>
+						</td>
+						<td>
+							<div>http://localhost:5000</div>
+						</td>
+						<td>
+							<div>Percentage of responses with status code 2xx</div>
+						</td>
+						<td align="center">
+							<div>77 %</div>
+						</td>
+						</tr>
+					
+						<tr>
+						<td class="risk-0">
+							<div>Info</div>
+						</td>
+						<td>
+							<div>Informational</div>
+						</td>
+						<td>
+							<div>http://localhost:5000</div>
+						</td>
+						<td>
+							<div>Percentage of responses with status code 4xx</div>
+						</td>
+						<td align="center">
+							<div>22 %</div>
+						</td>
+						</tr>
+					
+						<tr>
+						<td class="risk-0">
+							<div>Info</div>
+						</td>
+						<td>
+							<div>Informational</div>
+						</td>
+						<td>
+							<div>http://localhost:5000</div>
+						</td>
+						<td>
+							<div>Percentage of endpoints with content type application/javascript</div>
+						</td>
+						<td align="center">
+							<div>40 %</div>
+						</td>
+						</tr>
+					
+						<tr>
+						<td class="risk-0">
+							<div>Info</div>
+						</td>
+						<td>
+							<div>Informational</div>
+						</td>
+						<td>
+							<div>http://localhost:5000</div>
+						</td>
+						<td>
+							<div>Percentage of endpoints with content type image/x-icon</div>
+						</td>
+						<td align="center">
+							<div>5 %</div>
+						</td>
+						</tr>
+					
+						<tr>
+						<td class="risk-0">
+							<div>Info</div>
+						</td>
+						<td>
+							<div>Informational</div>
+						</td>
+						<td>
+							<div>http://localhost:5000</div>
+						</td>
+						<td>
+							<div>Percentage of endpoints with content type text/css</div>
+						</td>
+						<td align="center">
+							<div>25 %</div>
+						</td>
+						</tr>
+					
+						<tr>
+						<td class="risk-0">
+							<div>Info</div>
+						</td>
+						<td>
+							<div>Informational</div>
+						</td>
+						<td>
+							<div>http://localhost:5000</div>
+						</td>
+						<td>
+							<div>Percentage of endpoints with content type text/html</div>
+						</td>
+						<td align="center">
+							<div>25 %</div>
+						</td>
+						</tr>
+					
+						<tr>
+						<td class="risk-0">
+							<div>Info</div>
+						</td>
+						<td>
+							<div>Informational</div>
+						</td>
+						<td>
+							<div>http://localhost:5000</div>
+						</td>
+						<td>
+							<div>Percentage of endpoints with content type text/plain</div>
+						</td>
+						<td align="center">
+							<div>5 %</div>
+						</td>
+						</tr>
+					
+						<tr>
+						<td class="risk-0">
+							<div>Info</div>
+						</td>
+						<td>
+							<div>Informational</div>
+						</td>
+						<td>
+							<div>http://localhost:5000</div>
+						</td>
+						<td>
+							<div>Percentage of endpoints with method GET</div>
+						</td>
+						<td align="center">
+							<div>100 %</div>
+						</td>
+						</tr>
+					
+						<tr>
+						<td class="risk-0">
+							<div>Info</div>
+						</td>
+						<td>
+							<div>Informational</div>
+						</td>
+						<td>
+							<div>http://localhost:5000</div>
+						</td>
+						<td>
+							<div>Count of total endpoints</div>
+						</td>
+						<td align="center">
+							<div>20   </div>
+						</td>
+						</tr>
+					
+						<tr>
+						<td class="risk-0">
+							<div>Info</div>
+						</td>
+						<td>
+							<div>Informational</div>
+						</td>
+						<td>
+							<div>https://download.mozilla.org</div>
+						</td>
+						<td>
+							<div>Percentage of responses with status code 3xx</div>
+						</td>
+						<td align="center">
+							<div>100 %</div>
+						</td>
+						</tr>
+					
+						<tr>
+						<td class="risk-0">
+							<div>Info</div>
+						</td>
+						<td>
+							<div>Informational</div>
+						</td>
+						<td>
+							<div>https://download.mozilla.org</div>
+						</td>
+						<td>
+							<div>Percentage of slow responses</div>
+						</td>
+						<td align="center">
+							<div>100 %</div>
+						</td>
+						</tr>
+					
+					</tbody>
+				</table>
+			</section>
+		</section>
+
+		<section id="alerts" class="alerts">
+			<h2>Alerts</h2>
+			<ol>
+				
+				 
+				 
+				
+				
+				<li id="alerts--risk-2-confidence-3">
+					<h3>
+						<span>Risk</span>=<span
+							class="risk-level">Medium</span>, <span>Confidence</span>=<span
+							class="confidence-level">High</span> <span>(3)</span>
+					</h3>
+					<ol>
+						
+						
+						
+						<li class="alerts--site-li">
+							<h4>
+								<span class="site">http://localhost:5000</span> <span>(3)</span>
+							</h4>
+							<ol>
+								
+								<li>
+									<h5>
+										<a
+											href="#alert-type-0">CSP: Failure to Define Directive with No Fallback</a> <span>(1)</span>
+									</h5>
+									<ol>
+										<li><details>
+												<summary>
+													<span class="request-method-n-url">GET http://localhost:5000/sitemap.xml</span>
+												</summary>
+												
+<table class="alerts-table">
+	<tr>
+		<th scope="row">Alert tags</th>
+		<td>
+			<ul class="alert-tags-list">
+				<li>
+					<span><a href="https://owasp.org/Top10/A05_2021-Security_Misconfiguration/">OWASP_2021_A05</a></span> 
+				</li>
+				<li>
+					 <span>POLICY_QA_STD = </span>
+				</li>
+				<li>
+					 <span>POLICY_PENTEST = </span>
+				</li>
+				<li>
+					<span><a href="https://www.zaproxy.org/docs/desktop/addons/common-library/alerttags/#systemic">SYSTEMIC</a></span> 
+				</li>
+				<li>
+					<span><a href="https://cwe.mitre.org/data/definitions/693.html">CWE-693</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-top-ten/2017/A6_2017-Security_Misconfiguration.html">OWASP_2017_A06</a></span> 
+				</li>
+				<li>
+					 <span>POLICY_DEV_STD = </span>
+				</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row">Alert description</th>
+		<td> 
+<p>The Content Security Policy fails to define one of the directives that has no fallback. Missing/excluding them is the same as allowing anything.</p>
+ </td>
+	</tr>
+	<tr>
+		<th scope="row">Other info</th>
+		<td> 
+<p>The directive(s): frame-ancestors, form-action is/are among the directives that do not fallback to default-src.</p>
+ </td>
+	</tr>
+	<tr>
+		<th scope="row">Request</th>
+		<td><details open="open">
+				<summary>Request line and header section (240 bytes)</summary>
+				
+				<pre><code>GET http://localhost:5000/sitemap.xml HTTP/1.1
+host: localhost:5000
+user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36
+pragma: no-cache
+cache-control: no-cache
+
+</code></pre>
+				
+				
+			</details> <details class="request-body" open="open">
+				<summary>Request body (0 bytes)</summary>
+				
+				<pre><code></code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Response</th>
+		<td><details open="open">
+				<summary>Status line and header section (420 bytes)</summary>
+				
+				<pre><code>HTTP/1.1 404 Not Found
+X-Powered-By: Express
+Content-Security-Policy: default-src &#39;none&#39;
+X-Content-Type-Options: nosniff
+Content-Type: text/html; charset=utf-8
+Content-Length: 150
+Set-Cookie: sessionID=s%3A1765973047223.IqTyWNlIWnB0gaXDC2XSHnaAxs05VsMOpvjce65%2BuJM; Path=/; Expires=Thu, 16 Apr 2026 12:04:07 GMT; SameSite=Lax
+Date: Wed, 17 Dec 2025 12:04:07 GMT
+Connection: keep-alive
+Keep-Alive: timeout=5
+
+</code></pre>
+				
+				
+			</details> <details class="response-body" open="open">
+				<summary>Response body (150 bytes)</summary>
+				
+				<pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+&lt;meta charset=&quot;utf-8&quot;&gt;
+&lt;title&gt;Error&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;pre&gt;Cannot GET /sitemap.xml&lt;/pre&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Parameter</th>
+		<td><pre><code>Content-Security-Policy</code></pre></td>
+	</tr>
+	
+	<tr>
+		<th scope="row">Evidence</th>
+		<td><pre><code>default-src &#39;none&#39;</code></pre></td>
+	</tr>
+	<tr>
+		<th scope="row">Solution</th>
+		<td> 
+<p>Ensure that your web server, application server, load balancer, etc. is properly configured to set the Content-Security-Policy header.</p>
+ </td>
+	</tr>
+</table>
+
+											</details></li>
+									</ol>
+								</li>
+								
+								<li>
+									<h5>
+										<a
+											href="#alert-type-1">Content Security Policy (CSP) Header Not Set</a> <span>(1)</span>
+									</h5>
+									<ol>
+										<li><details>
+												<summary>
+													<span class="request-method-n-url">GET http://localhost:5000</span>
+												</summary>
+												
+<table class="alerts-table">
+	<tr>
+		<th scope="row">Alert tags</th>
+		<td>
+			<ul class="alert-tags-list">
+				<li>
+					<span><a href="https://owasp.org/Top10/A05_2021-Security_Misconfiguration/">OWASP_2021_A05</a></span> 
+				</li>
+				<li>
+					 <span>POLICY_QA_STD = </span>
+				</li>
+				<li>
+					 <span>POLICY_PENTEST = </span>
+				</li>
+				<li>
+					<span><a href="https://www.zaproxy.org/docs/desktop/addons/common-library/alerttags/#systemic">SYSTEMIC</a></span> 
+				</li>
+				<li>
+					<span><a href="https://cwe.mitre.org/data/definitions/693.html">CWE-693</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-top-ten/2017/A6_2017-Security_Misconfiguration.html">OWASP_2017_A06</a></span> 
+				</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row">Alert description</th>
+		<td> 
+<p>Content Security Policy (CSP) is an added layer of security that helps to detect and mitigate certain types of attacks, including Cross Site Scripting (XSS) and data injection attacks. These attacks are used for everything from data theft to site defacement or distribution of malware. CSP provides a set of standard HTTP headers that allow website owners to declare approved sources of content that browsers should be allowed to load on that page — covered types are JavaScript, CSS, HTML frames, fonts, images and embeddable objects such as Java applets, ActiveX, audio and video files.</p>
+ </td>
+	</tr>
+	
+	<tr>
+		<th scope="row">Request</th>
+		<td><details open="open">
+				<summary>Request line and header section (228 bytes)</summary>
+				
+				<pre><code>GET http://localhost:5000 HTTP/1.1
+host: localhost:5000
+user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36
+pragma: no-cache
+cache-control: no-cache
+
+</code></pre>
+				
+				
+			</details> <details class="request-body" open="open">
+				<summary>Request body (0 bytes)</summary>
+				
+				<pre><code></code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Response</th>
+		<td><details open="open">
+				<summary>Status line and header section (381 bytes)</summary>
+				
+				<pre><code>HTTP/1.1 200 OK
+X-Powered-By: Express
+Content-Type: text/html; charset=utf-8
+Content-Length: 11224
+ETag: W/&quot;2bd8-n7HfgSIXTAmCViCVIYWUaFuKUf4&quot;
+Set-Cookie: sessionID=s%3A1765973047222.N9tAmNYdovT7sSjKUpZFzZCE8I9ysoalVC0FGN%2FfzUA; Path=/; Expires=Thu, 16 Apr 2026 12:04:07 GMT; SameSite=Lax
+Date: Wed, 17 Dec 2025 12:04:07 GMT
+Connection: keep-alive
+Keep-Alive: timeout=5
+
+</code></pre>
+				
+				
+			</details> <details class="response-body">
+				<summary>Response body (11224 bytes)</summary>
+				
+				<pre><code>&lt;!DOCTYPE html&gt;
+
+&lt;!-- =========================================================
+* Sneat - Bootstrap 5 HTML Admin Template - Pro | v1.0.0
+==============================================================
+
+* Product Page: https://themeselection.com/products/sneat-bootstrap-html-admin-template/
+* Created by: ThemeSelection
+* License: You must have a valid license purchased in order to legally use the theme for your project.
+* Copyright ThemeSelection (https://themeselection.com)
+
+=========================================================
+ --&gt;
+&lt;!-- beautify ignore:start --&gt;
+&lt;html
+  lang=&quot;en&quot;
+  class=&quot;light-style customizer-hide&quot;
+  dir=&quot;ltr&quot;
+  data-theme=&quot;theme-default&quot;
+  data-assets-path=&quot;/&quot;
+  data-template=&quot;vertical-menu-template-free&quot;
+&gt;
+  &lt;head&gt;
+    &lt;meta charset=&quot;utf-8&quot; /&gt;
+    &lt;meta
+      name=&quot;viewport&quot;
+      content=&quot;width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0&quot;
+    /&gt;
+
+    &lt;title&gt;Login Basic - Pages | Sneat - Bootstrap 5 HTML Admin Template - Pro&lt;/title&gt;
+
+    &lt;meta name=&quot;description&quot; content=&quot;&quot; /&gt;
+
+    &lt;!-- Favicon --&gt;
+    &lt;link rel=&quot;icon&quot; type=&quot;image/x-icon&quot; href=&quot;/img/favicon/favicon.ico&quot; /&gt;
+
+    &lt;!-- Fonts --&gt;
+    &lt;link rel=&quot;preconnect&quot; href=&quot;https://fonts.googleapis.com&quot; /&gt;
+    &lt;link rel=&quot;preconnect&quot; href=&quot;https://fonts.gstatic.com&quot; crossorigin /&gt;
+    &lt;link
+      href=&quot;https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&amp;display=swap&quot;
+      rel=&quot;stylesheet&quot;
+    /&gt;
+
+    &lt;!-- Icons. Uncomment required icon fonts --&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;/vendor/fonts/boxicons.css&quot; /&gt;
+
+    &lt;!-- Core CSS --&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;/vendor/css/core.css&quot; class=&quot;template-customizer-core-css&quot; /&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;/vendor/css/theme-default.css&quot; class=&quot;template-customizer-theme-css&quot; /&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;/css/demo.css&quot; /&gt;
+
+    &lt;!-- Vendors CSS --&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;/vendor/libs/perfect-scrollbar/perfect-scrollbar.css&quot; /&gt;
+
+    &lt;!-- Page CSS --&gt;
+    &lt;!-- Page --&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;/vendor/css/pages/page-auth.css&quot; /&gt;
+    &lt;!-- Helpers --&gt;
+    &lt;script src=&quot;/vendor/js/helpers.js&quot;&gt;&lt;/script&gt;
+
+    &lt;!--! Template customizer &amp; Theme config files MUST be included after core stylesheets and helpers.js in the &lt;head&gt; section --&gt;
+    &lt;!--? Config:  Mandatory theme config file contain global vars &amp; default theme options, Set your preferred theme option in this file.  --&gt;
+    &lt;script src=&quot;/js/config.js&quot;&gt;&lt;/script&gt;
+  &lt;/head&gt;
+
+  &lt;body&gt;
+    &lt;!-- Content --&gt;
+
+    &lt;div class=&quot;container-xxl&quot;&gt;
+      &lt;div class=&quot;authentication-wrapper authentication-basic container-p-y&quot;&gt;
+        &lt;div class=&quot;authentication-inner&quot;&gt;
+          &lt;!-- Register --&gt;
+          &lt;div class=&quot;card&quot;&gt;
+            &lt;div class=&quot;card-body&quot;&gt;
+              &lt;!-- Logo --&gt;
+              &lt;div class=&quot;app-brand justify-content-center&quot;&gt;
+                &lt;a href=&quot;index.html&quot; class=&quot;app-brand-link gap-2&quot;&gt;
+                  &lt;span class=&quot;app-brand-logo demo&quot;&gt;
+                    &lt;svg
+                      width=&quot;25&quot;
+                      viewBox=&quot;0 0 25 42&quot;
+                      version=&quot;1.1&quot;
+                      xmlns=&quot;http://www.w3.org/2000/svg&quot;
+                      xmlns:xlink=&quot;http://www.w3.org/1999/xlink&quot;
+                    &gt;
+                      &lt;defs&gt;
+                        &lt;path
+                          d=&quot;M13.7918663,0.358365126 L3.39788168,7.44174259 C0.566865006,9.69408886 -0.379795268,12.4788597 0.557900856,15.7960551 C0.68998853,16.2305145 1.09562888,17.7872135 3.12357076,19.2293357 C3.8146334,19.7207684 5.32369333,20.3834223 7.65075054,21.2172976 L7.59773219,21.2525164 L2.63468769,24.5493413 C0.445452254,26.3002124 0.0884951797,28.5083815 1.56381646,31.1738486 C2.83770406,32.8170431 5.20850219,33.2640127 7.09180128,32.5391577 C8.347334,32.0559211 11.4559176,30.0011079 16.4175519,26.3747182 C18.0338572,24.4997857 18.6973423,22.4544883 18.4080071,20.2388261 C17.963753,17.5346866 16.1776345,15.5799961 13.0496516,14.3747546 L10.9194936,13.4715819 L18.6192054,7.984237 L13.7918663,0.358365126 Z&quot;
+                          id=&quot;path-1&quot;
+                        &gt;&lt;/path&gt;
+                        &lt;path
+                          d=&quot;M5.47320593,6.00457225 C4.05321814,8.216144 4.36334763,10.0722806 6.40359441,11.5729822 C8.61520715,12.571656 10.0999176,13.2171421 10.8577257,13.5094407 L15.5088241,14.433041 L18.6192054,7.984237 C15.5364148,3.11535317 13.9273018,0.573395879 13.7918663,0.358365126 C13.5790555,0.511491653 10.8061687,2.3935607 5.47320593,6.00457225 Z&quot;
+                          id=&quot;path-3&quot;
+                        &gt;&lt;/path&gt;
+                        &lt;path
+                          d=&quot;M7.50063644,21.2294429 L12.3234468,23.3159332 C14.1688022,24.7579751 14.397098,26.4880487 13.008334,28.506154 C11.6195701,30.5242593 10.3099883,31.790241 9.07958868,32.3040991 C5.78142938,33.4346997 4.13234973,34 4.13234973,34 C4.13234973,34 2.75489982,33.0538207 2.37032616e-14,31.1614621 C-0.55822714,27.8186216 -0.55822714,26.0572515 -4.05231404e-15,25.8773518 C0.83734071,25.6075023 2.77988457,22.8248993 3.3049379,22.52991 C3.65497346,22.3332504 5.05353963,21.8997614 7.50063644,21.2294429 Z&quot;
+                          id=&quot;path-4&quot;
+                        &gt;&lt;/path&gt;
+                        &lt;path
+                          d=&quot;M20.6,7.13333333 L25.6,13.8 C26.2627417,14.6836556 26.0836556,15.9372583 25.2,16.6 C24.8538077,16.8596443 24.4327404,17 24,17 L14,17 C12.8954305,17 12,16.1045695 12,15 C12,14.5672596 12.1403557,14.1461923 12.4,13.8 L17.4,7.13333333 C18.0627417,6.24967773 19.3163444,6.07059163 20.2,6.73333333 C20.3516113,6.84704183 20.4862915,6.981722 20.6,7.13333333 Z&quot;
+                          id=&quot;path-5&quot;
+                        &gt;&lt;/path&gt;
+                      &lt;/defs&gt;
+                      &lt;g id=&quot;g-app-brand&quot; stroke=&quot;none&quot; stroke-width=&quot;1&quot; fill=&quot;none&quot; fill-rule=&quot;evenodd&quot;&gt;
+                        &lt;g id=&quot;Brand-Logo&quot; transform=&quot;translate(-27.000000, -15.000000)&quot;&gt;
+                          &lt;g id=&quot;Icon&quot; transform=&quot;translate(27.000000, 15.000000)&quot;&gt;
+                            &lt;g id=&quot;Mask&quot; transform=&quot;translate(0.000000, 8.000000)&quot;&gt;
+                              &lt;mask id=&quot;mask-2&quot; fill=&quot;white&quot;&gt;
+                                &lt;use xlink:href=&quot;#path-1&quot;&gt;&lt;/use&gt;
+                              &lt;/mask&gt;
+                              &lt;use fill=&quot;#696cff&quot; xlink:href=&quot;#path-1&quot;&gt;&lt;/use&gt;
+                              &lt;g id=&quot;Path-3&quot; mask=&quot;url(#mask-2)&quot;&gt;
+                                &lt;use fill=&quot;#696cff&quot; xlink:href=&quot;#path-3&quot;&gt;&lt;/use&gt;
+                                &lt;use fill-opacity=&quot;0.2&quot; fill=&quot;#FFFFFF&quot; xlink:href=&quot;#path-3&quot;&gt;&lt;/use&gt;
+                              &lt;/g&gt;
+                              &lt;g id=&quot;Path-4&quot; mask=&quot;url(#mask-2)&quot;&gt;
+                                &lt;use fill=&quot;#696cff&quot; xlink:href=&quot;#path-4&quot;&gt;&lt;/use&gt;
+                                &lt;use fill-opacity=&quot;0.2&quot; fill=&quot;#FFFFFF&quot; xlink:href=&quot;#path-4&quot;&gt;&lt;/use&gt;
+                              &lt;/g&gt;
+                            &lt;/g&gt;
+                            &lt;g
+                              id=&quot;Triangle&quot;
+                              transform=&quot;translate(19.000000, 11.000000) rotate(-300.000000) translate(-19.000000, -11.000000) &quot;
+                            &gt;
+                              &lt;use fill=&quot;#696cff&quot; xlink:href=&quot;#path-5&quot;&gt;&lt;/use&gt;
+                              &lt;use fill-opacity=&quot;0.2&quot; fill=&quot;#FFFFFF&quot; xlink:href=&quot;#path-5&quot;&gt;&lt;/use&gt;
+                            &lt;/g&gt;
+                          &lt;/g&gt;
+                        &lt;/g&gt;
+                      &lt;/g&gt;
+                    &lt;/svg&gt;
+                  &lt;/span&gt;
+                  &lt;span class=&quot;app-brand-text demo text-body fw-bolder&quot;&gt;Sneat&lt;/span&gt;
+                &lt;/a&gt;
+              &lt;/div&gt;
+              &lt;!-- /Logo --&gt;
+              &lt;h4 class=&quot;mb-2&quot;&gt;Welcome to Sneat! 👋&lt;/h4&gt;
+              &lt;p class=&quot;mb-4&quot;&gt;Please log in to continue&lt;/p&gt;
+
+              &lt;form id=&quot;formAuthentication&quot; class=&quot;mb-3&quot; action=&quot;/login&quot; method=&quot;GET&quot;&gt;
+                &lt;div class=&quot;mb-3&quot;&gt;
+                  &lt;label for=&quot;email&quot; class=&quot;form-label&quot;&gt;Email or Username&lt;/label&gt;
+                  &lt;input
+                    type=&quot;text&quot;
+                    class=&quot;form-control&quot;
+                    id=&quot;email&quot;
+                    name=&quot;email&quot;
+                    placeholder=&quot;Enter your email or username&quot;
+                    autofocus
+                  /&gt;
+                &lt;/div&gt;
+                &lt;div class=&quot;mb-3 form-password-toggle&quot;&gt;
+                  &lt;div class=&quot;d-flex justify-content-between&quot;&gt;
+                    &lt;label class=&quot;form-label&quot; for=&quot;password&quot;&gt;Password&lt;/label&gt;
+                    &lt;!-- &lt;a href=&quot;auth-forgot-password-basic.html&quot;&gt;
+                      &lt;small&gt;Forgot Password?&lt;/small&gt;
+                    &lt;/a&gt; --&gt;
+                  &lt;/div&gt;
+                  &lt;div class=&quot;input-group input-group-merge&quot;&gt;
+                    &lt;input
+                      type=&quot;password&quot;
+                      id=&quot;password&quot;
+                      class=&quot;form-control&quot;
+                      name=&quot;password&quot;
+                      placeholder=&quot;&amp;#xb7;&amp;#xb7;&amp;#xb7;&amp;#xb7;&amp;#xb7;&amp;#xb7;&amp;#xb7;&amp;#xb7;&amp;#xb7;&amp;#xb7;&amp;#xb7;&amp;#xb7;&quot;
+                      aria-describedby=&quot;password&quot;
+                    /&gt;
+                    &lt;span class=&quot;input-group-text cursor-pointer&quot;&gt;&lt;i class=&quot;bx bx-hide&quot;&gt;&lt;/i&gt;&lt;/span&gt;
+                  &lt;/div&gt;
+                &lt;/div&gt;
+                &lt;div class=&quot;mb-3&quot;&gt;
+                  &lt;div class=&quot;form-check&quot;&gt;
+                    &lt;input class=&quot;form-check-input&quot; type=&quot;checkbox&quot; id=&quot;remember-me&quot; /&gt;
+                    &lt;label class=&quot;form-check-label&quot; for=&quot;remember-me&quot;&gt; Remember Me &lt;/label&gt;
+                  &lt;/div&gt;
+                &lt;/div&gt;
+                &lt;div class=&quot;mb-3&quot;&gt;
+                  &lt;button class=&quot;btn btn-primary d-grid w-100&quot; type=&quot;submit&quot;&gt;Sign in&lt;/button&gt;
+                &lt;/div&gt;
+              &lt;/form&gt;
+
+              &lt;p class=&quot;text-center&quot;&gt;
+                &lt;span&gt;New on our platform?&lt;/span&gt;
+                &lt;a href=&quot;/register&quot;&gt;
+                  &lt;span&gt;Create an account&lt;/span&gt;
+                &lt;/a&gt;
+              &lt;/p&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+          &lt;!-- /Register --&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;!-- / Content --&gt;
+
+    &lt;div class=&quot;buy-now&quot;&gt;
+      &lt;a
+        href=&quot;https://themeselection.com/products/sneat-bootstrap-html-admin-template/&quot;
+        target=&quot;_blank&quot;
+        class=&quot;btn btn-danger btn-buy-now&quot;
+        &gt;Upgrade to Pro&lt;/a
+      &gt;
+    &lt;/div&gt;
+
+    &lt;!-- Core JS --&gt;
+    &lt;!-- build:js assets/vendor/js/core.js --&gt;
+    &lt;script src=&quot;/vendor/libs/jquery/jquery.js&quot;&gt;&lt;/script&gt;
+    &lt;script src=&quot;/vendor/libs/popper/popper.js&quot;&gt;&lt;/script&gt;
+    &lt;script src=&quot;/vendor/js/bootstrap.js&quot;&gt;&lt;/script&gt;
+    &lt;script src=&quot;/vendor/libs/perfect-scrollbar/perfect-scrollbar.js&quot;&gt;&lt;/script&gt;
+
+    &lt;script src=&quot;/vendor/js/menu.js&quot;&gt;&lt;/script&gt;
+    &lt;!-- endbuild --&gt;
+
+    &lt;!-- Vendors JS --&gt;
+
+    &lt;!-- Main JS --&gt;
+    &lt;script src=&quot;/js/main.js&quot;&gt;&lt;/script&gt;
+
+    &lt;!-- Page JS --&gt;
+
+    &lt;!-- Place this tag in your head or just before your close body tag. --&gt;
+    &lt;script async defer src=&quot;https://buttons.github.io/buttons.js&quot;&gt;&lt;/script&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	
+	
+	
+	<tr>
+		<th scope="row">Solution</th>
+		<td> 
+<p>Ensure that your web server, application server, load balancer, etc. is configured to set the Content-Security-Policy header.</p>
+ </td>
+	</tr>
+</table>
+
+											</details></li>
+									</ol>
+								</li>
+								
+								<li>
+									<h5>
+										<a
+											href="#alert-type-4">Sub Resource Integrity Attribute Missing</a> <span>(1)</span>
+									</h5>
+									<ol>
+										<li><details>
+												<summary>
+													<span class="request-method-n-url">GET http://localhost:5000</span>
+												</summary>
+												
+<table class="alerts-table">
+	<tr>
+		<th scope="row">Alert tags</th>
+		<td>
+			<ul class="alert-tags-list">
+				<li>
+					<span><a href="https://cwe.mitre.org/data/definitions/345.html">CWE-345</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/Top10/A05_2021-Security_Misconfiguration/">OWASP_2021_A05</a></span> 
+				</li>
+				<li>
+					 <span>POLICY_QA_STD = </span>
+				</li>
+				<li>
+					 <span>POLICY_PENTEST = </span>
+				</li>
+				<li>
+					<span><a href="https://www.zaproxy.org/docs/desktop/addons/common-library/alerttags/#systemic">SYSTEMIC</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-top-ten/2017/A6_2017-Security_Misconfiguration.html">OWASP_2017_A06</a></span> 
+				</li>
+				<li>
+					 <span>POLICY_DEV_STD = </span>
+				</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row">Alert description</th>
+		<td> 
+<p>The integrity attribute is missing on a script or link tag served by an external server. The integrity tag prevents an attacker who have gained access to this server from injecting a malicious content.</p>
+ </td>
+	</tr>
+	
+	<tr>
+		<th scope="row">Request</th>
+		<td><details open="open">
+				<summary>Request line and header section (228 bytes)</summary>
+				
+				<pre><code>GET http://localhost:5000 HTTP/1.1
+host: localhost:5000
+user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36
+pragma: no-cache
+cache-control: no-cache
+
+</code></pre>
+				
+				
+			</details> <details class="request-body" open="open">
+				<summary>Request body (0 bytes)</summary>
+				
+				<pre><code></code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Response</th>
+		<td><details open="open">
+				<summary>Status line and header section (383 bytes)</summary>
+				
+				<pre><code>HTTP/1.1 200 OK
+X-Powered-By: Express
+Content-Type: text/html; charset=utf-8
+Content-Length: 11224
+ETag: W/&quot;2bd8-n7HfgSIXTAmCViCVIYWUaFuKUf4&quot;
+Set-Cookie: sessionID=s%3A1765973047177.A9%2FwJHFR4Mzq5%2Fy75OTvkKDj6AEs7jty2ABiTjyaefA; Path=/; Expires=Thu, 16 Apr 2026 12:04:07 GMT; SameSite=Lax
+Date: Wed, 17 Dec 2025 12:04:07 GMT
+Connection: keep-alive
+Keep-Alive: timeout=5
+
+</code></pre>
+				
+				
+			</details> <details class="response-body">
+				<summary>Response body (11224 bytes)</summary>
+				
+				<pre><code>&lt;!DOCTYPE html&gt;
+
+&lt;!-- =========================================================
+* Sneat - Bootstrap 5 HTML Admin Template - Pro | v1.0.0
+==============================================================
+
+* Product Page: https://themeselection.com/products/sneat-bootstrap-html-admin-template/
+* Created by: ThemeSelection
+* License: You must have a valid license purchased in order to legally use the theme for your project.
+* Copyright ThemeSelection (https://themeselection.com)
+
+=========================================================
+ --&gt;
+&lt;!-- beautify ignore:start --&gt;
+&lt;html
+  lang=&quot;en&quot;
+  class=&quot;light-style customizer-hide&quot;
+  dir=&quot;ltr&quot;
+  data-theme=&quot;theme-default&quot;
+  data-assets-path=&quot;/&quot;
+  data-template=&quot;vertical-menu-template-free&quot;
+&gt;
+  &lt;head&gt;
+    &lt;meta charset=&quot;utf-8&quot; /&gt;
+    &lt;meta
+      name=&quot;viewport&quot;
+      content=&quot;width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0&quot;
+    /&gt;
+
+    &lt;title&gt;Login Basic - Pages | Sneat - Bootstrap 5 HTML Admin Template - Pro&lt;/title&gt;
+
+    &lt;meta name=&quot;description&quot; content=&quot;&quot; /&gt;
+
+    &lt;!-- Favicon --&gt;
+    &lt;link rel=&quot;icon&quot; type=&quot;image/x-icon&quot; href=&quot;/img/favicon/favicon.ico&quot; /&gt;
+
+    &lt;!-- Fonts --&gt;
+    &lt;link rel=&quot;preconnect&quot; href=&quot;https://fonts.googleapis.com&quot; /&gt;
+    &lt;link rel=&quot;preconnect&quot; href=&quot;https://fonts.gstatic.com&quot; crossorigin /&gt;
+    &lt;link
+      href=&quot;https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&amp;display=swap&quot;
+      rel=&quot;stylesheet&quot;
+    /&gt;
+
+    &lt;!-- Icons. Uncomment required icon fonts --&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;/vendor/fonts/boxicons.css&quot; /&gt;
+
+    &lt;!-- Core CSS --&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;/vendor/css/core.css&quot; class=&quot;template-customizer-core-css&quot; /&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;/vendor/css/theme-default.css&quot; class=&quot;template-customizer-theme-css&quot; /&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;/css/demo.css&quot; /&gt;
+
+    &lt;!-- Vendors CSS --&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;/vendor/libs/perfect-scrollbar/perfect-scrollbar.css&quot; /&gt;
+
+    &lt;!-- Page CSS --&gt;
+    &lt;!-- Page --&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;/vendor/css/pages/page-auth.css&quot; /&gt;
+    &lt;!-- Helpers --&gt;
+    &lt;script src=&quot;/vendor/js/helpers.js&quot;&gt;&lt;/script&gt;
+
+    &lt;!--! Template customizer &amp; Theme config files MUST be included after core stylesheets and helpers.js in the &lt;head&gt; section --&gt;
+    &lt;!--? Config:  Mandatory theme config file contain global vars &amp; default theme options, Set your preferred theme option in this file.  --&gt;
+    &lt;script src=&quot;/js/config.js&quot;&gt;&lt;/script&gt;
+  &lt;/head&gt;
+
+  &lt;body&gt;
+    &lt;!-- Content --&gt;
+
+    &lt;div class=&quot;container-xxl&quot;&gt;
+      &lt;div class=&quot;authentication-wrapper authentication-basic container-p-y&quot;&gt;
+        &lt;div class=&quot;authentication-inner&quot;&gt;
+          &lt;!-- Register --&gt;
+          &lt;div class=&quot;card&quot;&gt;
+            &lt;div class=&quot;card-body&quot;&gt;
+              &lt;!-- Logo --&gt;
+              &lt;div class=&quot;app-brand justify-content-center&quot;&gt;
+                &lt;a href=&quot;index.html&quot; class=&quot;app-brand-link gap-2&quot;&gt;
+                  &lt;span class=&quot;app-brand-logo demo&quot;&gt;
+                    &lt;svg
+                      width=&quot;25&quot;
+                      viewBox=&quot;0 0 25 42&quot;
+                      version=&quot;1.1&quot;
+                      xmlns=&quot;http://www.w3.org/2000/svg&quot;
+                      xmlns:xlink=&quot;http://www.w3.org/1999/xlink&quot;
+                    &gt;
+                      &lt;defs&gt;
+                        &lt;path
+                          d=&quot;M13.7918663,0.358365126 L3.39788168,7.44174259 C0.566865006,9.69408886 -0.379795268,12.4788597 0.557900856,15.7960551 C0.68998853,16.2305145 1.09562888,17.7872135 3.12357076,19.2293357 C3.8146334,19.7207684 5.32369333,20.3834223 7.65075054,21.2172976 L7.59773219,21.2525164 L2.63468769,24.5493413 C0.445452254,26.3002124 0.0884951797,28.5083815 1.56381646,31.1738486 C2.83770406,32.8170431 5.20850219,33.2640127 7.09180128,32.5391577 C8.347334,32.0559211 11.4559176,30.0011079 16.4175519,26.3747182 C18.0338572,24.4997857 18.6973423,22.4544883 18.4080071,20.2388261 C17.963753,17.5346866 16.1776345,15.5799961 13.0496516,14.3747546 L10.9194936,13.4715819 L18.6192054,7.984237 L13.7918663,0.358365126 Z&quot;
+                          id=&quot;path-1&quot;
+                        &gt;&lt;/path&gt;
+                        &lt;path
+                          d=&quot;M5.47320593,6.00457225 C4.05321814,8.216144 4.36334763,10.0722806 6.40359441,11.5729822 C8.61520715,12.571656 10.0999176,13.2171421 10.8577257,13.5094407 L15.5088241,14.433041 L18.6192054,7.984237 C15.5364148,3.11535317 13.9273018,0.573395879 13.7918663,0.358365126 C13.5790555,0.511491653 10.8061687,2.3935607 5.47320593,6.00457225 Z&quot;
+                          id=&quot;path-3&quot;
+                        &gt;&lt;/path&gt;
+                        &lt;path
+                          d=&quot;M7.50063644,21.2294429 L12.3234468,23.3159332 C14.1688022,24.7579751 14.397098,26.4880487 13.008334,28.506154 C11.6195701,30.5242593 10.3099883,31.790241 9.07958868,32.3040991 C5.78142938,33.4346997 4.13234973,34 4.13234973,34 C4.13234973,34 2.75489982,33.0538207 2.37032616e-14,31.1614621 C-0.55822714,27.8186216 -0.55822714,26.0572515 -4.05231404e-15,25.8773518 C0.83734071,25.6075023 2.77988457,22.8248993 3.3049379,22.52991 C3.65497346,22.3332504 5.05353963,21.8997614 7.50063644,21.2294429 Z&quot;
+                          id=&quot;path-4&quot;
+                        &gt;&lt;/path&gt;
+                        &lt;path
+                          d=&quot;M20.6,7.13333333 L25.6,13.8 C26.2627417,14.6836556 26.0836556,15.9372583 25.2,16.6 C24.8538077,16.8596443 24.4327404,17 24,17 L14,17 C12.8954305,17 12,16.1045695 12,15 C12,14.5672596 12.1403557,14.1461923 12.4,13.8 L17.4,7.13333333 C18.0627417,6.24967773 19.3163444,6.07059163 20.2,6.73333333 C20.3516113,6.84704183 20.4862915,6.981722 20.6,7.13333333 Z&quot;
+                          id=&quot;path-5&quot;
+                        &gt;&lt;/path&gt;
+                      &lt;/defs&gt;
+                      &lt;g id=&quot;g-app-brand&quot; stroke=&quot;none&quot; stroke-width=&quot;1&quot; fill=&quot;none&quot; fill-rule=&quot;evenodd&quot;&gt;
+                        &lt;g id=&quot;Brand-Logo&quot; transform=&quot;translate(-27.000000, -15.000000)&quot;&gt;
+                          &lt;g id=&quot;Icon&quot; transform=&quot;translate(27.000000, 15.000000)&quot;&gt;
+                            &lt;g id=&quot;Mask&quot; transform=&quot;translate(0.000000, 8.000000)&quot;&gt;
+                              &lt;mask id=&quot;mask-2&quot; fill=&quot;white&quot;&gt;
+                                &lt;use xlink:href=&quot;#path-1&quot;&gt;&lt;/use&gt;
+                              &lt;/mask&gt;
+                              &lt;use fill=&quot;#696cff&quot; xlink:href=&quot;#path-1&quot;&gt;&lt;/use&gt;
+                              &lt;g id=&quot;Path-3&quot; mask=&quot;url(#mask-2)&quot;&gt;
+                                &lt;use fill=&quot;#696cff&quot; xlink:href=&quot;#path-3&quot;&gt;&lt;/use&gt;
+                                &lt;use fill-opacity=&quot;0.2&quot; fill=&quot;#FFFFFF&quot; xlink:href=&quot;#path-3&quot;&gt;&lt;/use&gt;
+                              &lt;/g&gt;
+                              &lt;g id=&quot;Path-4&quot; mask=&quot;url(#mask-2)&quot;&gt;
+                                &lt;use fill=&quot;#696cff&quot; xlink:href=&quot;#path-4&quot;&gt;&lt;/use&gt;
+                                &lt;use fill-opacity=&quot;0.2&quot; fill=&quot;#FFFFFF&quot; xlink:href=&quot;#path-4&quot;&gt;&lt;/use&gt;
+                              &lt;/g&gt;
+                            &lt;/g&gt;
+                            &lt;g
+                              id=&quot;Triangle&quot;
+                              transform=&quot;translate(19.000000, 11.000000) rotate(-300.000000) translate(-19.000000, -11.000000) &quot;
+                            &gt;
+                              &lt;use fill=&quot;#696cff&quot; xlink:href=&quot;#path-5&quot;&gt;&lt;/use&gt;
+                              &lt;use fill-opacity=&quot;0.2&quot; fill=&quot;#FFFFFF&quot; xlink:href=&quot;#path-5&quot;&gt;&lt;/use&gt;
+                            &lt;/g&gt;
+                          &lt;/g&gt;
+                        &lt;/g&gt;
+                      &lt;/g&gt;
+                    &lt;/svg&gt;
+                  &lt;/span&gt;
+                  &lt;span class=&quot;app-brand-text demo text-body fw-bolder&quot;&gt;Sneat&lt;/span&gt;
+                &lt;/a&gt;
+              &lt;/div&gt;
+              &lt;!-- /Logo --&gt;
+              &lt;h4 class=&quot;mb-2&quot;&gt;Welcome to Sneat! 👋&lt;/h4&gt;
+              &lt;p class=&quot;mb-4&quot;&gt;Please log in to continue&lt;/p&gt;
+
+              &lt;form id=&quot;formAuthentication&quot; class=&quot;mb-3&quot; action=&quot;/login&quot; method=&quot;GET&quot;&gt;
+                &lt;div class=&quot;mb-3&quot;&gt;
+                  &lt;label for=&quot;email&quot; class=&quot;form-label&quot;&gt;Email or Username&lt;/label&gt;
+                  &lt;input
+                    type=&quot;text&quot;
+                    class=&quot;form-control&quot;
+                    id=&quot;email&quot;
+                    name=&quot;email&quot;
+                    placeholder=&quot;Enter your email or username&quot;
+                    autofocus
+                  /&gt;
+                &lt;/div&gt;
+                &lt;div class=&quot;mb-3 form-password-toggle&quot;&gt;
+                  &lt;div class=&quot;d-flex justify-content-between&quot;&gt;
+                    &lt;label class=&quot;form-label&quot; for=&quot;password&quot;&gt;Password&lt;/label&gt;
+                    &lt;!-- &lt;a href=&quot;auth-forgot-password-basic.html&quot;&gt;
+                      &lt;small&gt;Forgot Password?&lt;/small&gt;
+                    &lt;/a&gt; --&gt;
+                  &lt;/div&gt;
+                  &lt;div class=&quot;input-group input-group-merge&quot;&gt;
+                    &lt;input
+                      type=&quot;password&quot;
+                      id=&quot;password&quot;
+                      class=&quot;form-control&quot;
+                      name=&quot;password&quot;
+                      placeholder=&quot;&amp;#xb7;&amp;#xb7;&amp;#xb7;&amp;#xb7;&amp;#xb7;&amp;#xb7;&amp;#xb7;&amp;#xb7;&amp;#xb7;&amp;#xb7;&amp;#xb7;&amp;#xb7;&quot;
+                      aria-describedby=&quot;password&quot;
+                    /&gt;
+                    &lt;span class=&quot;input-group-text cursor-pointer&quot;&gt;&lt;i class=&quot;bx bx-hide&quot;&gt;&lt;/i&gt;&lt;/span&gt;
+                  &lt;/div&gt;
+                &lt;/div&gt;
+                &lt;div class=&quot;mb-3&quot;&gt;
+                  &lt;div class=&quot;form-check&quot;&gt;
+                    &lt;input class=&quot;form-check-input&quot; type=&quot;checkbox&quot; id=&quot;remember-me&quot; /&gt;
+                    &lt;label class=&quot;form-check-label&quot; for=&quot;remember-me&quot;&gt; Remember Me &lt;/label&gt;
+                  &lt;/div&gt;
+                &lt;/div&gt;
+                &lt;div class=&quot;mb-3&quot;&gt;
+                  &lt;button class=&quot;btn btn-primary d-grid w-100&quot; type=&quot;submit&quot;&gt;Sign in&lt;/button&gt;
+                &lt;/div&gt;
+              &lt;/form&gt;
+
+              &lt;p class=&quot;text-center&quot;&gt;
+                &lt;span&gt;New on our platform?&lt;/span&gt;
+                &lt;a href=&quot;/register&quot;&gt;
+                  &lt;span&gt;Create an account&lt;/span&gt;
+                &lt;/a&gt;
+              &lt;/p&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+          &lt;!-- /Register --&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;!-- / Content --&gt;
+
+    &lt;div class=&quot;buy-now&quot;&gt;
+      &lt;a
+        href=&quot;https://themeselection.com/products/sneat-bootstrap-html-admin-template/&quot;
+        target=&quot;_blank&quot;
+        class=&quot;btn btn-danger btn-buy-now&quot;
+        &gt;Upgrade to Pro&lt;/a
+      &gt;
+    &lt;/div&gt;
+
+    &lt;!-- Core JS --&gt;
+    &lt;!-- build:js assets/vendor/js/core.js --&gt;
+    &lt;script src=&quot;/vendor/libs/jquery/jquery.js&quot;&gt;&lt;/script&gt;
+    &lt;script src=&quot;/vendor/libs/popper/popper.js&quot;&gt;&lt;/script&gt;
+    &lt;script src=&quot;/vendor/js/bootstrap.js&quot;&gt;&lt;/script&gt;
+    &lt;script src=&quot;/vendor/libs/perfect-scrollbar/perfect-scrollbar.js&quot;&gt;&lt;/script&gt;
+
+    &lt;script src=&quot;/vendor/js/menu.js&quot;&gt;&lt;/script&gt;
+    &lt;!-- endbuild --&gt;
+
+    &lt;!-- Vendors JS --&gt;
+
+    &lt;!-- Main JS --&gt;
+    &lt;script src=&quot;/js/main.js&quot;&gt;&lt;/script&gt;
+
+    &lt;!-- Page JS --&gt;
+
+    &lt;!-- Place this tag in your head or just before your close body tag. --&gt;
+    &lt;script async defer src=&quot;https://buttons.github.io/buttons.js&quot;&gt;&lt;/script&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	
+	
+	<tr>
+		<th scope="row">Evidence</th>
+		<td><pre><code>&lt;link
+      href=&quot;https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&amp;display=swap&quot;
+      rel=&quot;stylesheet&quot;
+    /&gt;</code></pre></td>
+	</tr>
+	<tr>
+		<th scope="row">Solution</th>
+		<td> 
+<p>Provide a valid integrity attribute to the tag.</p>
+ </td>
+	</tr>
+</table>
+
+											</details></li>
+									</ol>
+								</li>
+								
+							</ol>
+						</li>
+						
+					</ol>
+				</li>
+				
+				<li id="alerts--risk-2-confidence-2">
+					<h3>
+						<span>Risk</span>=<span
+							class="risk-level">Medium</span>, <span>Confidence</span>=<span
+							class="confidence-level">Medium</span> <span>(2)</span>
+					</h3>
+					<ol>
+						
+						<li class="alerts--site-li">
+							<h4>
+								<span class="site">https://localhost:5000</span> <span>(1)</span>
+							</h4>
+							<ol>
+								
+								<li>
+									<h5>
+										<a
+											href="#alert-type-2">HTTP Only Site</a> <span>(1)</span>
+									</h5>
+									<ol>
+										<li><details>
+												<summary>
+													<span class="request-method-n-url">GET http://localhost:5000</span>
+												</summary>
+												
+<table class="alerts-table">
+	<tr>
+		<th scope="row">Alert tags</th>
+		<td>
+			<ul class="alert-tags-list">
+				<li>
+					<span><a href="https://owasp.org/Top10/A05_2021-Security_Misconfiguration/">OWASP_2021_A05</a></span> 
+				</li>
+				<li>
+					 <span>POLICY_QA_FULL = </span>
+				</li>
+				<li>
+					 <span>POLICY_PENTEST = </span>
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-top-ten/2017/A6_2017-Security_Misconfiguration.html">OWASP_2017_A06</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-web-security-testing-guide/v42/4-Web_Application_Security_Testing/09-Testing_for_Weak_Cryptography/03-Testing_for_Sensitive_Information_Sent_via_Unencrypted_Channels">WSTG-v42-CRYP-03</a></span> 
+				</li>
+				<li>
+					<span><a href="https://cwe.mitre.org/data/definitions/311.html">CWE-311</a></span> 
+				</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row">Alert description</th>
+		<td> 
+<p>The site is only served under HTTP and not HTTPS.</p>
+ </td>
+	</tr>
+	<tr>
+		<th scope="row">Other info</th>
+		<td> 
+<p>Failed to connect.</p>
+
+<p>ZAP attempted to connect via: https://localhost:5000</p>
+ </td>
+	</tr>
+	<tr>
+		<th scope="row">Request</th>
+		<td><details open="open">
+				<summary>Request line and header section (229 bytes)</summary>
+				
+				<pre><code>GET https://localhost:5000 HTTP/1.1
+host: localhost:5000
+user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36
+pragma: no-cache
+cache-control: no-cache
+
+</code></pre>
+				
+				
+			</details> <details class="request-body" open="open">
+				<summary>Request body (0 bytes)</summary>
+				
+				<pre><code></code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Response</th>
+		<td><details open="open">
+				<summary>Status line and header section (14 bytes)</summary>
+				
+				<pre><code>HTTP/1.0 0
+
+</code></pre>
+				
+				
+			</details> <details class="response-body" open="open">
+				<summary>Response body (0 bytes)</summary>
+				
+				<pre><code></code></pre>
+				
+				
+			</details></td>
+	</tr>
+	
+	
+	
+	<tr>
+		<th scope="row">Solution</th>
+		<td> 
+<p>Configure your web or application server to use SSL (https).</p>
+ </td>
+	</tr>
+</table>
+
+											</details></li>
+									</ol>
+								</li>
+								
+							</ol>
+						</li>
+						
+						<li class="alerts--site-li">
+							<h4>
+								<span class="site">http://localhost:5000</span> <span>(1)</span>
+							</h4>
+							<ol>
+								
+								<li>
+									<h5>
+										<a
+											href="#alert-type-3">Missing Anti-clickjacking Header</a> <span>(1)</span>
+									</h5>
+									<ol>
+										<li><details>
+												<summary>
+													<span class="request-method-n-url">GET http://localhost:5000</span>
+												</summary>
+												
+<table class="alerts-table">
+	<tr>
+		<th scope="row">Alert tags</th>
+		<td>
+			<ul class="alert-tags-list">
+				<li>
+					<span><a href="https://owasp.org/Top10/A05_2021-Security_Misconfiguration/">OWASP_2021_A05</a></span> 
+				</li>
+				<li>
+					 <span>POLICY_QA_STD = </span>
+				</li>
+				<li>
+					 <span>POLICY_PENTEST = </span>
+				</li>
+				<li>
+					<span><a href="https://cwe.mitre.org/data/definitions/1021.html">CWE-1021</a></span> 
+				</li>
+				<li>
+					<span><a href="https://www.zaproxy.org/docs/desktop/addons/common-library/alerttags/#systemic">SYSTEMIC</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-web-security-testing-guide/v42/4-Web_Application_Security_Testing/11-Client-side_Testing/09-Testing_for_Clickjacking">WSTG-v42-CLNT-09</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-top-ten/2017/A6_2017-Security_Misconfiguration.html">OWASP_2017_A06</a></span> 
+				</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row">Alert description</th>
+		<td> 
+<p>The response does not protect against &#39;ClickJacking&#39; attacks. It should include either Content-Security-Policy with &#39;frame-ancestors&#39; directive or X-Frame-Options.</p>
+ </td>
+	</tr>
+	
+	<tr>
+		<th scope="row">Request</th>
+		<td><details open="open">
+				<summary>Request line and header section (228 bytes)</summary>
+				
+				<pre><code>GET http://localhost:5000 HTTP/1.1
+host: localhost:5000
+user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36
+pragma: no-cache
+cache-control: no-cache
+
+</code></pre>
+				
+				
+			</details> <details class="request-body" open="open">
+				<summary>Request body (0 bytes)</summary>
+				
+				<pre><code></code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Response</th>
+		<td><details open="open">
+				<summary>Status line and header section (381 bytes)</summary>
+				
+				<pre><code>HTTP/1.1 200 OK
+X-Powered-By: Express
+Content-Type: text/html; charset=utf-8
+Content-Length: 11224
+ETag: W/&quot;2bd8-n7HfgSIXTAmCViCVIYWUaFuKUf4&quot;
+Set-Cookie: sessionID=s%3A1765973047222.N9tAmNYdovT7sSjKUpZFzZCE8I9ysoalVC0FGN%2FfzUA; Path=/; Expires=Thu, 16 Apr 2026 12:04:07 GMT; SameSite=Lax
+Date: Wed, 17 Dec 2025 12:04:07 GMT
+Connection: keep-alive
+Keep-Alive: timeout=5
+
+</code></pre>
+				
+				
+			</details> <details class="response-body">
+				<summary>Response body (11224 bytes)</summary>
+				
+				<pre><code>&lt;!DOCTYPE html&gt;
+
+&lt;!-- =========================================================
+* Sneat - Bootstrap 5 HTML Admin Template - Pro | v1.0.0
+==============================================================
+
+* Product Page: https://themeselection.com/products/sneat-bootstrap-html-admin-template/
+* Created by: ThemeSelection
+* License: You must have a valid license purchased in order to legally use the theme for your project.
+* Copyright ThemeSelection (https://themeselection.com)
+
+=========================================================
+ --&gt;
+&lt;!-- beautify ignore:start --&gt;
+&lt;html
+  lang=&quot;en&quot;
+  class=&quot;light-style customizer-hide&quot;
+  dir=&quot;ltr&quot;
+  data-theme=&quot;theme-default&quot;
+  data-assets-path=&quot;/&quot;
+  data-template=&quot;vertical-menu-template-free&quot;
+&gt;
+  &lt;head&gt;
+    &lt;meta charset=&quot;utf-8&quot; /&gt;
+    &lt;meta
+      name=&quot;viewport&quot;
+      content=&quot;width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0&quot;
+    /&gt;
+
+    &lt;title&gt;Login Basic - Pages | Sneat - Bootstrap 5 HTML Admin Template - Pro&lt;/title&gt;
+
+    &lt;meta name=&quot;description&quot; content=&quot;&quot; /&gt;
+
+    &lt;!-- Favicon --&gt;
+    &lt;link rel=&quot;icon&quot; type=&quot;image/x-icon&quot; href=&quot;/img/favicon/favicon.ico&quot; /&gt;
+
+    &lt;!-- Fonts --&gt;
+    &lt;link rel=&quot;preconnect&quot; href=&quot;https://fonts.googleapis.com&quot; /&gt;
+    &lt;link rel=&quot;preconnect&quot; href=&quot;https://fonts.gstatic.com&quot; crossorigin /&gt;
+    &lt;link
+      href=&quot;https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&amp;display=swap&quot;
+      rel=&quot;stylesheet&quot;
+    /&gt;
+
+    &lt;!-- Icons. Uncomment required icon fonts --&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;/vendor/fonts/boxicons.css&quot; /&gt;
+
+    &lt;!-- Core CSS --&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;/vendor/css/core.css&quot; class=&quot;template-customizer-core-css&quot; /&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;/vendor/css/theme-default.css&quot; class=&quot;template-customizer-theme-css&quot; /&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;/css/demo.css&quot; /&gt;
+
+    &lt;!-- Vendors CSS --&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;/vendor/libs/perfect-scrollbar/perfect-scrollbar.css&quot; /&gt;
+
+    &lt;!-- Page CSS --&gt;
+    &lt;!-- Page --&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;/vendor/css/pages/page-auth.css&quot; /&gt;
+    &lt;!-- Helpers --&gt;
+    &lt;script src=&quot;/vendor/js/helpers.js&quot;&gt;&lt;/script&gt;
+
+    &lt;!--! Template customizer &amp; Theme config files MUST be included after core stylesheets and helpers.js in the &lt;head&gt; section --&gt;
+    &lt;!--? Config:  Mandatory theme config file contain global vars &amp; default theme options, Set your preferred theme option in this file.  --&gt;
+    &lt;script src=&quot;/js/config.js&quot;&gt;&lt;/script&gt;
+  &lt;/head&gt;
+
+  &lt;body&gt;
+    &lt;!-- Content --&gt;
+
+    &lt;div class=&quot;container-xxl&quot;&gt;
+      &lt;div class=&quot;authentication-wrapper authentication-basic container-p-y&quot;&gt;
+        &lt;div class=&quot;authentication-inner&quot;&gt;
+          &lt;!-- Register --&gt;
+          &lt;div class=&quot;card&quot;&gt;
+            &lt;div class=&quot;card-body&quot;&gt;
+              &lt;!-- Logo --&gt;
+              &lt;div class=&quot;app-brand justify-content-center&quot;&gt;
+                &lt;a href=&quot;index.html&quot; class=&quot;app-brand-link gap-2&quot;&gt;
+                  &lt;span class=&quot;app-brand-logo demo&quot;&gt;
+                    &lt;svg
+                      width=&quot;25&quot;
+                      viewBox=&quot;0 0 25 42&quot;
+                      version=&quot;1.1&quot;
+                      xmlns=&quot;http://www.w3.org/2000/svg&quot;
+                      xmlns:xlink=&quot;http://www.w3.org/1999/xlink&quot;
+                    &gt;
+                      &lt;defs&gt;
+                        &lt;path
+                          d=&quot;M13.7918663,0.358365126 L3.39788168,7.44174259 C0.566865006,9.69408886 -0.379795268,12.4788597 0.557900856,15.7960551 C0.68998853,16.2305145 1.09562888,17.7872135 3.12357076,19.2293357 C3.8146334,19.7207684 5.32369333,20.3834223 7.65075054,21.2172976 L7.59773219,21.2525164 L2.63468769,24.5493413 C0.445452254,26.3002124 0.0884951797,28.5083815 1.56381646,31.1738486 C2.83770406,32.8170431 5.20850219,33.2640127 7.09180128,32.5391577 C8.347334,32.0559211 11.4559176,30.0011079 16.4175519,26.3747182 C18.0338572,24.4997857 18.6973423,22.4544883 18.4080071,20.2388261 C17.963753,17.5346866 16.1776345,15.5799961 13.0496516,14.3747546 L10.9194936,13.4715819 L18.6192054,7.984237 L13.7918663,0.358365126 Z&quot;
+                          id=&quot;path-1&quot;
+                        &gt;&lt;/path&gt;
+                        &lt;path
+                          d=&quot;M5.47320593,6.00457225 C4.05321814,8.216144 4.36334763,10.0722806 6.40359441,11.5729822 C8.61520715,12.571656 10.0999176,13.2171421 10.8577257,13.5094407 L15.5088241,14.433041 L18.6192054,7.984237 C15.5364148,3.11535317 13.9273018,0.573395879 13.7918663,0.358365126 C13.5790555,0.511491653 10.8061687,2.3935607 5.47320593,6.00457225 Z&quot;
+                          id=&quot;path-3&quot;
+                        &gt;&lt;/path&gt;
+                        &lt;path
+                          d=&quot;M7.50063644,21.2294429 L12.3234468,23.3159332 C14.1688022,24.7579751 14.397098,26.4880487 13.008334,28.506154 C11.6195701,30.5242593 10.3099883,31.790241 9.07958868,32.3040991 C5.78142938,33.4346997 4.13234973,34 4.13234973,34 C4.13234973,34 2.75489982,33.0538207 2.37032616e-14,31.1614621 C-0.55822714,27.8186216 -0.55822714,26.0572515 -4.05231404e-15,25.8773518 C0.83734071,25.6075023 2.77988457,22.8248993 3.3049379,22.52991 C3.65497346,22.3332504 5.05353963,21.8997614 7.50063644,21.2294429 Z&quot;
+                          id=&quot;path-4&quot;
+                        &gt;&lt;/path&gt;
+                        &lt;path
+                          d=&quot;M20.6,7.13333333 L25.6,13.8 C26.2627417,14.6836556 26.0836556,15.9372583 25.2,16.6 C24.8538077,16.8596443 24.4327404,17 24,17 L14,17 C12.8954305,17 12,16.1045695 12,15 C12,14.5672596 12.1403557,14.1461923 12.4,13.8 L17.4,7.13333333 C18.0627417,6.24967773 19.3163444,6.07059163 20.2,6.73333333 C20.3516113,6.84704183 20.4862915,6.981722 20.6,7.13333333 Z&quot;
+                          id=&quot;path-5&quot;
+                        &gt;&lt;/path&gt;
+                      &lt;/defs&gt;
+                      &lt;g id=&quot;g-app-brand&quot; stroke=&quot;none&quot; stroke-width=&quot;1&quot; fill=&quot;none&quot; fill-rule=&quot;evenodd&quot;&gt;
+                        &lt;g id=&quot;Brand-Logo&quot; transform=&quot;translate(-27.000000, -15.000000)&quot;&gt;
+                          &lt;g id=&quot;Icon&quot; transform=&quot;translate(27.000000, 15.000000)&quot;&gt;
+                            &lt;g id=&quot;Mask&quot; transform=&quot;translate(0.000000, 8.000000)&quot;&gt;
+                              &lt;mask id=&quot;mask-2&quot; fill=&quot;white&quot;&gt;
+                                &lt;use xlink:href=&quot;#path-1&quot;&gt;&lt;/use&gt;
+                              &lt;/mask&gt;
+                              &lt;use fill=&quot;#696cff&quot; xlink:href=&quot;#path-1&quot;&gt;&lt;/use&gt;
+                              &lt;g id=&quot;Path-3&quot; mask=&quot;url(#mask-2)&quot;&gt;
+                                &lt;use fill=&quot;#696cff&quot; xlink:href=&quot;#path-3&quot;&gt;&lt;/use&gt;
+                                &lt;use fill-opacity=&quot;0.2&quot; fill=&quot;#FFFFFF&quot; xlink:href=&quot;#path-3&quot;&gt;&lt;/use&gt;
+                              &lt;/g&gt;
+                              &lt;g id=&quot;Path-4&quot; mask=&quot;url(#mask-2)&quot;&gt;
+                                &lt;use fill=&quot;#696cff&quot; xlink:href=&quot;#path-4&quot;&gt;&lt;/use&gt;
+                                &lt;use fill-opacity=&quot;0.2&quot; fill=&quot;#FFFFFF&quot; xlink:href=&quot;#path-4&quot;&gt;&lt;/use&gt;
+                              &lt;/g&gt;
+                            &lt;/g&gt;
+                            &lt;g
+                              id=&quot;Triangle&quot;
+                              transform=&quot;translate(19.000000, 11.000000) rotate(-300.000000) translate(-19.000000, -11.000000) &quot;
+                            &gt;
+                              &lt;use fill=&quot;#696cff&quot; xlink:href=&quot;#path-5&quot;&gt;&lt;/use&gt;
+                              &lt;use fill-opacity=&quot;0.2&quot; fill=&quot;#FFFFFF&quot; xlink:href=&quot;#path-5&quot;&gt;&lt;/use&gt;
+                            &lt;/g&gt;
+                          &lt;/g&gt;
+                        &lt;/g&gt;
+                      &lt;/g&gt;
+                    &lt;/svg&gt;
+                  &lt;/span&gt;
+                  &lt;span class=&quot;app-brand-text demo text-body fw-bolder&quot;&gt;Sneat&lt;/span&gt;
+                &lt;/a&gt;
+              &lt;/div&gt;
+              &lt;!-- /Logo --&gt;
+              &lt;h4 class=&quot;mb-2&quot;&gt;Welcome to Sneat! 👋&lt;/h4&gt;
+              &lt;p class=&quot;mb-4&quot;&gt;Please log in to continue&lt;/p&gt;
+
+              &lt;form id=&quot;formAuthentication&quot; class=&quot;mb-3&quot; action=&quot;/login&quot; method=&quot;GET&quot;&gt;
+                &lt;div class=&quot;mb-3&quot;&gt;
+                  &lt;label for=&quot;email&quot; class=&quot;form-label&quot;&gt;Email or Username&lt;/label&gt;
+                  &lt;input
+                    type=&quot;text&quot;
+                    class=&quot;form-control&quot;
+                    id=&quot;email&quot;
+                    name=&quot;email&quot;
+                    placeholder=&quot;Enter your email or username&quot;
+                    autofocus
+                  /&gt;
+                &lt;/div&gt;
+                &lt;div class=&quot;mb-3 form-password-toggle&quot;&gt;
+                  &lt;div class=&quot;d-flex justify-content-between&quot;&gt;
+                    &lt;label class=&quot;form-label&quot; for=&quot;password&quot;&gt;Password&lt;/label&gt;
+                    &lt;!-- &lt;a href=&quot;auth-forgot-password-basic.html&quot;&gt;
+                      &lt;small&gt;Forgot Password?&lt;/small&gt;
+                    &lt;/a&gt; --&gt;
+                  &lt;/div&gt;
+                  &lt;div class=&quot;input-group input-group-merge&quot;&gt;
+                    &lt;input
+                      type=&quot;password&quot;
+                      id=&quot;password&quot;
+                      class=&quot;form-control&quot;
+                      name=&quot;password&quot;
+                      placeholder=&quot;&amp;#xb7;&amp;#xb7;&amp;#xb7;&amp;#xb7;&amp;#xb7;&amp;#xb7;&amp;#xb7;&amp;#xb7;&amp;#xb7;&amp;#xb7;&amp;#xb7;&amp;#xb7;&quot;
+                      aria-describedby=&quot;password&quot;
+                    /&gt;
+                    &lt;span class=&quot;input-group-text cursor-pointer&quot;&gt;&lt;i class=&quot;bx bx-hide&quot;&gt;&lt;/i&gt;&lt;/span&gt;
+                  &lt;/div&gt;
+                &lt;/div&gt;
+                &lt;div class=&quot;mb-3&quot;&gt;
+                  &lt;div class=&quot;form-check&quot;&gt;
+                    &lt;input class=&quot;form-check-input&quot; type=&quot;checkbox&quot; id=&quot;remember-me&quot; /&gt;
+                    &lt;label class=&quot;form-check-label&quot; for=&quot;remember-me&quot;&gt; Remember Me &lt;/label&gt;
+                  &lt;/div&gt;
+                &lt;/div&gt;
+                &lt;div class=&quot;mb-3&quot;&gt;
+                  &lt;button class=&quot;btn btn-primary d-grid w-100&quot; type=&quot;submit&quot;&gt;Sign in&lt;/button&gt;
+                &lt;/div&gt;
+              &lt;/form&gt;
+
+              &lt;p class=&quot;text-center&quot;&gt;
+                &lt;span&gt;New on our platform?&lt;/span&gt;
+                &lt;a href=&quot;/register&quot;&gt;
+                  &lt;span&gt;Create an account&lt;/span&gt;
+                &lt;/a&gt;
+              &lt;/p&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+          &lt;!-- /Register --&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;!-- / Content --&gt;
+
+    &lt;div class=&quot;buy-now&quot;&gt;
+      &lt;a
+        href=&quot;https://themeselection.com/products/sneat-bootstrap-html-admin-template/&quot;
+        target=&quot;_blank&quot;
+        class=&quot;btn btn-danger btn-buy-now&quot;
+        &gt;Upgrade to Pro&lt;/a
+      &gt;
+    &lt;/div&gt;
+
+    &lt;!-- Core JS --&gt;
+    &lt;!-- build:js assets/vendor/js/core.js --&gt;
+    &lt;script src=&quot;/vendor/libs/jquery/jquery.js&quot;&gt;&lt;/script&gt;
+    &lt;script src=&quot;/vendor/libs/popper/popper.js&quot;&gt;&lt;/script&gt;
+    &lt;script src=&quot;/vendor/js/bootstrap.js&quot;&gt;&lt;/script&gt;
+    &lt;script src=&quot;/vendor/libs/perfect-scrollbar/perfect-scrollbar.js&quot;&gt;&lt;/script&gt;
+
+    &lt;script src=&quot;/vendor/js/menu.js&quot;&gt;&lt;/script&gt;
+    &lt;!-- endbuild --&gt;
+
+    &lt;!-- Vendors JS --&gt;
+
+    &lt;!-- Main JS --&gt;
+    &lt;script src=&quot;/js/main.js&quot;&gt;&lt;/script&gt;
+
+    &lt;!-- Page JS --&gt;
+
+    &lt;!-- Place this tag in your head or just before your close body tag. --&gt;
+    &lt;script async defer src=&quot;https://buttons.github.io/buttons.js&quot;&gt;&lt;/script&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Parameter</th>
+		<td><pre><code>x-frame-options</code></pre></td>
+	</tr>
+	
+	
+	<tr>
+		<th scope="row">Solution</th>
+		<td> 
+<p>Modern Web browsers support the Content-Security-Policy and X-Frame-Options HTTP headers. Ensure one of them is set on all web pages returned by your site/app.</p>
+
+<p>If you expect the page to be framed only by pages on your server (e.g. it&#39;s part of a FRAMESET) then you&#39;ll want to use SAMEORIGIN, otherwise if you never expect the page to be framed, you should use DENY. Alternatively consider implementing Content Security Policy&#39;s &quot;frame-ancestors&quot; directive.</p>
+ </td>
+	</tr>
+</table>
+
+											</details></li>
+									</ol>
+								</li>
+								
+							</ol>
+						</li>
+						
+					</ol>
+				</li>
+				
+				
+				  
+				 
+				
+				
+				
+				
+				<li id="alerts--risk-1-confidence-2">
+					<h3>
+						<span>Risk</span>=<span
+							class="risk-level">Low</span>, <span>Confidence</span>=<span
+							class="confidence-level">Medium</span> <span>(4)</span>
+					</h3>
+					<ol>
+						
+						
+						
+						<li class="alerts--site-li">
+							<h4>
+								<span class="site">http://localhost:5000</span> <span>(4)</span>
+							</h4>
+							<ol>
+								
+								<li>
+									<h5>
+										<a
+											href="#alert-type-5">Cookie No HttpOnly Flag</a> <span>(1)</span>
+									</h5>
+									<ol>
+										<li><details>
+												<summary>
+													<span class="request-method-n-url">GET http://localhost:5000/robots.txt</span>
+												</summary>
+												
+<table class="alerts-table">
+	<tr>
+		<th scope="row">Alert tags</th>
+		<td>
+			<ul class="alert-tags-list">
+				<li>
+					<span><a href="https://cwe.mitre.org/data/definitions/1004.html">CWE-1004</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/Top10/A05_2021-Security_Misconfiguration/">OWASP_2021_A05</a></span> 
+				</li>
+				<li>
+					 <span>POLICY_QA_STD = </span>
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-web-security-testing-guide/v42/4-Web_Application_Security_Testing/06-Session_Management_Testing/02-Testing_for_Cookies_Attributes">WSTG-v42-SESS-02</a></span> 
+				</li>
+				<li>
+					 <span>POLICY_PENTEST = </span>
+				</li>
+				<li>
+					<span><a href="https://www.zaproxy.org/docs/desktop/addons/common-library/alerttags/#systemic">SYSTEMIC</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-top-ten/2017/A6_2017-Security_Misconfiguration.html">OWASP_2017_A06</a></span> 
+				</li>
+				<li>
+					 <span>POLICY_DEV_STD = </span>
+				</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row">Alert description</th>
+		<td> 
+<p>A cookie has been set without the HttpOnly flag, which means that the cookie can be accessed by JavaScript. If a malicious script can be run on this page then the cookie will be accessible and can be transmitted to another site. If this is a session cookie then session hijacking may be possible.</p>
+ </td>
+	</tr>
+	
+	<tr>
+		<th scope="row">Request</th>
+		<td><details open="open">
+				<summary>Request line and header section (239 bytes)</summary>
+				
+				<pre><code>GET http://localhost:5000/robots.txt HTTP/1.1
+host: localhost:5000
+user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36
+pragma: no-cache
+cache-control: no-cache
+
+</code></pre>
+				
+				
+			</details> <details class="request-body" open="open">
+				<summary>Request body (0 bytes)</summary>
+				
+				<pre><code></code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Response</th>
+		<td><details open="open">
+				<summary>Status line and header section (420 bytes)</summary>
+				
+				<pre><code>HTTP/1.1 404 Not Found
+X-Powered-By: Express
+Content-Security-Policy: default-src &#39;none&#39;
+X-Content-Type-Options: nosniff
+Content-Type: text/html; charset=utf-8
+Content-Length: 149
+Set-Cookie: sessionID=s%3A1765973047219.gZADAf6Xpg6KApcSbcD77LLY8ZtKO%2FkG1p0BEgHWcPc; Path=/; Expires=Thu, 16 Apr 2026 12:04:07 GMT; SameSite=Lax
+Date: Wed, 17 Dec 2025 12:04:07 GMT
+Connection: keep-alive
+Keep-Alive: timeout=5
+
+</code></pre>
+				
+				
+			</details> <details class="response-body" open="open">
+				<summary>Response body (149 bytes)</summary>
+				
+				<pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+&lt;meta charset=&quot;utf-8&quot;&gt;
+&lt;title&gt;Error&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;pre&gt;Cannot GET /robots.txt&lt;/pre&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Parameter</th>
+		<td><pre><code>sessionID</code></pre></td>
+	</tr>
+	
+	<tr>
+		<th scope="row">Evidence</th>
+		<td><pre><code>Set-Cookie: sessionID</code></pre></td>
+	</tr>
+	<tr>
+		<th scope="row">Solution</th>
+		<td> 
+<p>Ensure that the HttpOnly flag is set for all cookies.</p>
+ </td>
+	</tr>
+</table>
+
+											</details></li>
+									</ol>
+								</li>
+								
+								<li>
+									<h5>
+										<a
+											href="#alert-type-6">Cross-Domain JavaScript Source File Inclusion</a> <span>(1)</span>
+									</h5>
+									<ol>
+										<li><details>
+												<summary>
+													<span class="request-method-n-url">GET http://localhost:5000/register</span>
+												</summary>
+												
+<table class="alerts-table">
+	<tr>
+		<th scope="row">Alert tags</th>
+		<td>
+			<ul class="alert-tags-list">
+				<li>
+					 <span>POLICY_QA_STD = </span>
+				</li>
+				<li>
+					 <span>POLICY_PENTEST = </span>
+				</li>
+				<li>
+					<span><a href="https://www.zaproxy.org/docs/desktop/addons/common-library/alerttags/#systemic">SYSTEMIC</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/Top10/A08_2021-Software_and_Data_Integrity_Failures/">OWASP_2021_A08</a></span> 
+				</li>
+				<li>
+					<span><a href="https://cwe.mitre.org/data/definitions/829.html">CWE-829</a></span> 
+				</li>
+				<li>
+					 <span>POLICY_DEV_STD = </span>
+				</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row">Alert description</th>
+		<td> 
+<p>The page includes one or more script files from a third-party domain.</p>
+ </td>
+	</tr>
+	
+	<tr>
+		<th scope="row">Request</th>
+		<td><details open="open">
+				<summary>Request line and header section (352 bytes)</summary>
+				
+				<pre><code>GET http://localhost:5000/register HTTP/1.1
+host: localhost:5000
+user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36
+pragma: no-cache
+cache-control: no-cache
+referer: http://localhost:5000
+Cookie: sessionID=s%3A1765973047222.N9tAmNYdovT7sSjKUpZFzZCE8I9ysoalVC0FGN%2FfzUA
+
+</code></pre>
+				
+				
+			</details> <details class="request-body" open="open">
+				<summary>Request body (0 bytes)</summary>
+				
+				<pre><code></code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Response</th>
+		<td><details open="open">
+				<summary>Status line and header section (233 bytes)</summary>
+				
+				<pre><code>HTTP/1.1 200 OK
+X-Powered-By: Express
+Content-Type: text/html; charset=utf-8
+Content-Length: 12301
+ETag: W/&quot;300d-m1X3P8nX9qcaxUYzOgVQ5yWo2Ro&quot;
+Date: Wed, 17 Dec 2025 12:04:07 GMT
+Connection: keep-alive
+Keep-Alive: timeout=5
+
+</code></pre>
+				
+				
+			</details> <details class="response-body">
+				<summary>Response body (12301 bytes)</summary>
+				
+				<pre><code>&lt;!DOCTYPE html&gt;
+
+&lt;!-- =========================================================
+* Sneat - Bootstrap 5 HTML Admin Template - Pro | v1.0.0
+==============================================================
+
+* Product Page: https://themeselection.com/products/sneat-bootstrap-html-admin-template/
+* Created by: ThemeSelection
+* License: You must have a valid license purchased in order to legally use the theme for your project.
+* Copyright ThemeSelection (https://themeselection.com)
+
+=========================================================
+ --&gt;
+&lt;!-- beautify ignore:start --&gt;
+&lt;html
+  lang=&quot;en&quot;
+  class=&quot;light-style customizer-hide&quot;
+  dir=&quot;ltr&quot;
+  data-theme=&quot;theme-default&quot;
+  data-assets-path=&quot;/&quot;
+  data-template=&quot;vertical-menu-template-free&quot;
+&gt;
+  &lt;head&gt;
+    &lt;meta charset=&quot;utf-8&quot; /&gt;
+    &lt;meta
+      name=&quot;viewport&quot;
+      content=&quot;width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0&quot;
+    /&gt;
+
+    &lt;title&gt;Login Basic - Pages | Sneat - Bootstrap 5 HTML Admin Template - Pro&lt;/title&gt;
+
+    &lt;meta name=&quot;description&quot; content=&quot;&quot; /&gt;
+
+    &lt;!-- Favicon --&gt;
+    &lt;link rel=&quot;icon&quot; type=&quot;image/x-icon&quot; href=&quot;/img/favicon/favicon.ico&quot; /&gt;
+
+    &lt;!-- Fonts --&gt;
+    &lt;link rel=&quot;preconnect&quot; href=&quot;https://fonts.googleapis.com&quot; /&gt;
+    &lt;link rel=&quot;preconnect&quot; href=&quot;https://fonts.gstatic.com&quot; crossorigin /&gt;
+    &lt;link
+      href=&quot;https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&amp;display=swap&quot;
+      rel=&quot;stylesheet&quot;
+    /&gt;
+
+    &lt;!-- Icons. Uncomment required icon fonts --&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;/vendor/fonts/boxicons.css&quot; /&gt;
+
+    &lt;!-- Core CSS --&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;/vendor/css/core.css&quot; class=&quot;template-customizer-core-css&quot; /&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;/vendor/css/theme-default.css&quot; class=&quot;template-customizer-theme-css&quot; /&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;/css/demo.css&quot; /&gt;
+
+    &lt;!-- Vendors CSS --&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;/vendor/libs/perfect-scrollbar/perfect-scrollbar.css&quot; /&gt;
+
+    &lt;!-- Page CSS --&gt;
+    &lt;!-- Page --&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;/vendor/css/pages/page-auth.css&quot; /&gt;
+    &lt;!-- Helpers --&gt;
+    &lt;script src=&quot;/vendor/js/helpers.js&quot;&gt;&lt;/script&gt;
+
+    &lt;!--! Template customizer &amp; Theme config files MUST be included after core stylesheets and helpers.js in the &lt;head&gt; section --&gt;
+    &lt;!--? Config:  Mandatory theme config file contain global vars &amp; default theme options, Set your preferred theme option in this file.  --&gt;
+    &lt;script src=&quot;/js/config.js&quot;&gt;&lt;/script&gt;
+  &lt;/head&gt;
+
+  &lt;body&gt;
+    &lt;!-- Content --&gt;
+
+    &lt;div class=&quot;container-xxl&quot;&gt;
+      &lt;div class=&quot;authentication-wrapper authentication-basic container-p-y&quot;&gt;
+        &lt;div class=&quot;authentication-inner&quot;&gt;
+          &lt;!-- Register --&gt;
+          &lt;div class=&quot;card&quot;&gt;
+            &lt;div class=&quot;card-body&quot;&gt;
+              &lt;!-- Logo --&gt;
+              &lt;div class=&quot;app-brand justify-content-center&quot;&gt;
+                &lt;a href=&quot;index.html&quot; class=&quot;app-brand-link gap-2&quot;&gt;
+                  &lt;span class=&quot;app-brand-logo demo&quot;&gt;
+                    &lt;svg
+                      width=&quot;25&quot;
+                      viewBox=&quot;0 0 25 42&quot;
+                      version=&quot;1.1&quot;
+                      xmlns=&quot;http://www.w3.org/2000/svg&quot;
+                      xmlns:xlink=&quot;http://www.w3.org/1999/xlink&quot;
+                    &gt;
+                      &lt;defs&gt;
+                        &lt;path
+                          d=&quot;M13.7918663,0.358365126 L3.39788168,7.44174259 C0.566865006,9.69408886 -0.379795268,12.4788597 0.557900856,15.7960551 C0.68998853,16.2305145 1.09562888,17.7872135 3.12357076,19.2293357 C3.8146334,19.7207684 5.32369333,20.3834223 7.65075054,21.2172976 L7.59773219,21.2525164 L2.63468769,24.5493413 C0.445452254,26.3002124 0.0884951797,28.5083815 1.56381646,31.1738486 C2.83770406,32.8170431 5.20850219,33.2640127 7.09180128,32.5391577 C8.347334,32.0559211 11.4559176,30.0011079 16.4175519,26.3747182 C18.0338572,24.4997857 18.6973423,22.4544883 18.4080071,20.2388261 C17.963753,17.5346866 16.1776345,15.5799961 13.0496516,14.3747546 L10.9194936,13.4715819 L18.6192054,7.984237 L13.7918663,0.358365126 Z&quot;
+                          id=&quot;path-1&quot;
+                        &gt;&lt;/path&gt;
+                        &lt;path
+                          d=&quot;M5.47320593,6.00457225 C4.05321814,8.216144 4.36334763,10.0722806 6.40359441,11.5729822 C8.61520715,12.571656 10.0999176,13.2171421 10.8577257,13.5094407 L15.5088241,14.433041 L18.6192054,7.984237 C15.5364148,3.11535317 13.9273018,0.573395879 13.7918663,0.358365126 C13.5790555,0.511491653 10.8061687,2.3935607 5.47320593,6.00457225 Z&quot;
+                          id=&quot;path-3&quot;
+                        &gt;&lt;/path&gt;
+                        &lt;path
+                          d=&quot;M7.50063644,21.2294429 L12.3234468,23.3159332 C14.1688022,24.7579751 14.397098,26.4880487 13.008334,28.506154 C11.6195701,30.5242593 10.3099883,31.790241 9.07958868,32.3040991 C5.78142938,33.4346997 4.13234973,34 4.13234973,34 C4.13234973,34 2.75489982,33.0538207 2.37032616e-14,31.1614621 C-0.55822714,27.8186216 -0.55822714,26.0572515 -4.05231404e-15,25.8773518 C0.83734071,25.6075023 2.77988457,22.8248993 3.3049379,22.52991 C3.65497346,22.3332504 5.05353963,21.8997614 7.50063644,21.2294429 Z&quot;
+                          id=&quot;path-4&quot;
+                        &gt;&lt;/path&gt;
+                        &lt;path
+                          d=&quot;M20.6,7.13333333 L25.6,13.8 C26.2627417,14.6836556 26.0836556,15.9372583 25.2,16.6 C24.8538077,16.8596443 24.4327404,17 24,17 L14,17 C12.8954305,17 12,16.1045695 12,15 C12,14.5672596 12.1403557,14.1461923 12.4,13.8 L17.4,7.13333333 C18.0627417,6.24967773 19.3163444,6.07059163 20.2,6.73333333 C20.3516113,6.84704183 20.4862915,6.981722 20.6,7.13333333 Z&quot;
+                          id=&quot;path-5&quot;
+                        &gt;&lt;/path&gt;
+                      &lt;/defs&gt;
+                      &lt;g id=&quot;g-app-brand&quot; stroke=&quot;none&quot; stroke-width=&quot;1&quot; fill=&quot;none&quot; fill-rule=&quot;evenodd&quot;&gt;
+                        &lt;g id=&quot;Brand-Logo&quot; transform=&quot;translate(-27.000000, -15.000000)&quot;&gt;
+                          &lt;g id=&quot;Icon&quot; transform=&quot;translate(27.000000, 15.000000)&quot;&gt;
+                            &lt;g id=&quot;Mask&quot; transform=&quot;translate(0.000000, 8.000000)&quot;&gt;
+                              &lt;mask id=&quot;mask-2&quot; fill=&quot;white&quot;&gt;
+                                &lt;use xlink:href=&quot;#path-1&quot;&gt;&lt;/use&gt;
+                              &lt;/mask&gt;
+                              &lt;use fill=&quot;#696cff&quot; xlink:href=&quot;#path-1&quot;&gt;&lt;/use&gt;
+                              &lt;g id=&quot;Path-3&quot; mask=&quot;url(#mask-2)&quot;&gt;
+                                &lt;use fill=&quot;#696cff&quot; xlink:href=&quot;#path-3&quot;&gt;&lt;/use&gt;
+                                &lt;use fill-opacity=&quot;0.2&quot; fill=&quot;#FFFFFF&quot; xlink:href=&quot;#path-3&quot;&gt;&lt;/use&gt;
+                              &lt;/g&gt;
+                              &lt;g id=&quot;Path-4&quot; mask=&quot;url(#mask-2)&quot;&gt;
+                                &lt;use fill=&quot;#696cff&quot; xlink:href=&quot;#path-4&quot;&gt;&lt;/use&gt;
+                                &lt;use fill-opacity=&quot;0.2&quot; fill=&quot;#FFFFFF&quot; xlink:href=&quot;#path-4&quot;&gt;&lt;/use&gt;
+                              &lt;/g&gt;
+                            &lt;/g&gt;
+                            &lt;g
+                              id=&quot;Triangle&quot;
+                              transform=&quot;translate(19.000000, 11.000000) rotate(-300.000000) translate(-19.000000, -11.000000) &quot;
+                            &gt;
+                              &lt;use fill=&quot;#696cff&quot; xlink:href=&quot;#path-5&quot;&gt;&lt;/use&gt;
+                              &lt;use fill-opacity=&quot;0.2&quot; fill=&quot;#FFFFFF&quot; xlink:href=&quot;#path-5&quot;&gt;&lt;/use&gt;
+                            &lt;/g&gt;
+                          &lt;/g&gt;
+                        &lt;/g&gt;
+                      &lt;/g&gt;
+                    &lt;/svg&gt;
+                  &lt;/span&gt;
+                  &lt;span class=&quot;app-brand-text demo text-body fw-bolder&quot;&gt;Sneat&lt;/span&gt;
+                &lt;/a&gt;
+              &lt;/div&gt;
+              &lt;!-- /Logo --&gt;
+              &lt;h4 class=&quot;mb-2&quot;&gt;Welcome to Sneat! 👋&lt;/h4&gt;
+              &lt;p class=&quot;mb-4&quot;&gt;Please log in to continue&lt;/p&gt;
+
+              &lt;form id=&quot;formAuthentication&quot; class=&quot;mb-3&quot; action=&quot;/registerform&quot; method=&quot;GET&quot;&gt;
+                &lt;div class=&quot;mb-3&quot;&gt;
+                  &lt;label for=&quot;email&quot; class=&quot;form-label&quot;&gt;Email or Username&lt;/label&gt;
+                  &lt;input
+                    type=&quot;text&quot;
+                    class=&quot;form-control&quot;
+                    id=&quot;email&quot;
+                    name=&quot;email&quot;
+                    placeholder=&quot;Enter your email or username&quot;
+                    autofocus
+                  /&gt;
+                &lt;/div&gt;
+                &lt;div class=&quot;mb-3 form-password-toggle&quot;&gt;
+                  &lt;div class=&quot;d-flex justify-content-between&quot;&gt;
+                    &lt;label class=&quot;form-label&quot; for=&quot;password&quot;&gt;Password&lt;/label&gt;
+                    &lt;!-- &lt;a href=&quot;auth-forgot-password-basic.html&quot;&gt;
+                      &lt;small&gt;Forgot Password?&lt;/small&gt;
+                    &lt;/a&gt; --&gt;
+                  &lt;/div&gt;
+                  &lt;div class=&quot;input-group input-group-merge&quot;&gt;
+                    &lt;input
+                      type=&quot;password&quot;
+                      id=&quot;password&quot;
+                      class=&quot;form-control&quot;
+                      name=&quot;password&quot;
+                      placeholder=&quot;&amp;#xb7;&amp;#xb7;&amp;#xb7;&amp;#xb7;&amp;#xb7;&amp;#xb7;&amp;#xb7;&amp;#xb7;&amp;#xb7;&amp;#xb7;&amp;#xb7;&amp;#xb7;&quot;
+                      aria-describedby=&quot;password&quot;
+                    /&gt;
+                    &lt;span class=&quot;input-group-text cursor-pointer&quot;&gt;&lt;i class=&quot;bx bx-hide&quot;&gt;&lt;/i&gt;&lt;/span&gt;
+                  &lt;/div&gt;
+                &lt;/div&gt;
+                &lt;div class=&quot;mb-3 form&quot;&gt;
+                  &lt;div class=&quot;d-flex justify-content-between&quot;&gt;
+                    &lt;label class=&quot;form-label&quot; for=&quot;name&quot;&gt;Name&lt;/label&gt;
+                  &lt;/div&gt;
+                  &lt;div class=&quot;input-group input-group-merge&quot;&gt;
+                    &lt;input
+                      type=&quot;text&quot;
+                      id=&quot;name&quot;
+                      class=&quot;form-control&quot;
+                      name=&quot;name&quot;
+                      placeholder=&quot;Enter Your Name&quot;
+                      aria-describedby=&quot;name&quot;
+                    /&gt;
+                  &lt;/div&gt;
+                &lt;/div&gt;
+                &lt;div class=&quot;mb-3 form&quot;&gt;
+                  &lt;div class=&quot;d-flex justify-content-between&quot;&gt;
+                    &lt;label class=&quot;form-label&quot; for=&quot;address&quot;&gt;Address&lt;/label&gt;
+                    &lt;!-- &lt;a href=&quot;auth-forgot-password-basic.html&quot;&gt;
+                      &lt;small&gt;Forgot Password?&lt;/small&gt;
+                    &lt;/a&gt; --&gt;
+                  &lt;/div&gt;
+                  &lt;div class=&quot;input-group input-group-merge&quot;&gt;
+                    &lt;input
+                      type=&quot;text&quot;
+                      id=&quot;address&quot;
+                      class=&quot;form-control&quot;
+                      name=&quot;address&quot;
+                      placeholder=&quot;Enter Your Address&quot;
+                      aria-describedby=&quot;address&quot;
+                    /&gt;
+                  &lt;/div&gt;
+                &lt;/div&gt;
+                &lt;div class=&quot;mb-3&quot;&gt;
+                  &lt;button class=&quot;btn btn-primary d-grid w-100&quot; type=&quot;submit&quot;&gt;register&lt;/button&gt;
+                &lt;/div&gt;
+              &lt;/form&gt;
+
+              &lt;p class=&quot;text-center&quot;&gt;
+                &lt;span&gt;Already a user?&lt;/span&gt;
+                &lt;a href=&quot;/login&quot;&gt;
+                  &lt;span&gt;Login!&lt;/span&gt;
+                &lt;/a&gt;
+              &lt;/p&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+          &lt;!-- /Register --&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;!-- / Content --&gt;
+
+    &lt;div class=&quot;buy-now&quot;&gt;
+      &lt;a
+        href=&quot;https://themeselection.com/products/sneat-bootstrap-html-admin-template/&quot;
+        target=&quot;_blank&quot;
+        class=&quot;btn btn-danger btn-buy-now&quot;
+        &gt;Upgrade to Pro&lt;/a
+      &gt;
+    &lt;/div&gt;
+
+    &lt;!-- Core JS --&gt;
+    &lt;!-- build:js assets/vendor/js/core.js --&gt;
+    &lt;script src=&quot;/vendor/libs/jquery/jquery.js&quot;&gt;&lt;/script&gt;
+    &lt;script src=&quot;/vendor/libs/popper/popper.js&quot;&gt;&lt;/script&gt;
+    &lt;script src=&quot;/vendor/js/bootstrap.js&quot;&gt;&lt;/script&gt;
+    &lt;script src=&quot;/vendor/libs/perfect-scrollbar/perfect-scrollbar.js&quot;&gt;&lt;/script&gt;
+
+    &lt;script src=&quot;/vendor/js/menu.js&quot;&gt;&lt;/script&gt;
+    &lt;!-- endbuild --&gt;
+
+    &lt;!-- Vendors JS --&gt;
+
+    &lt;!-- Main JS --&gt;
+    &lt;script src=&quot;/js/main.js&quot;&gt;&lt;/script&gt;
+
+    &lt;!-- Page JS --&gt;
+
+    &lt;!-- Place this tag in your head or just before your close body tag. --&gt;
+    &lt;script async defer src=&quot;https://buttons.github.io/buttons.js&quot;&gt;&lt;/script&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Parameter</th>
+		<td><pre><code>https://buttons.github.io/buttons.js</code></pre></td>
+	</tr>
+	
+	<tr>
+		<th scope="row">Evidence</th>
+		<td><pre><code>&lt;script async defer src=&quot;https://buttons.github.io/buttons.js&quot;&gt;&lt;/script&gt;</code></pre></td>
+	</tr>
+	<tr>
+		<th scope="row">Solution</th>
+		<td> 
+<p>Ensure JavaScript source files are loaded from only trusted sources, and the sources can&#39;t be controlled by end users of the application.</p>
+ </td>
+	</tr>
+</table>
+
+											</details></li>
+									</ol>
+								</li>
+								
+								<li>
+									<h5>
+										<a
+											href="#alert-type-7">Server Leaks Information via &quot;X-Powered-By&quot; HTTP Response Header Field(s)</a> <span>(1)</span>
+									</h5>
+									<ol>
+										<li><details>
+												<summary>
+													<span class="request-method-n-url">GET http://localhost:5000/img/favicon/favicon.ico</span>
+												</summary>
+												
+<table class="alerts-table">
+	<tr>
+		<th scope="row">Alert tags</th>
+		<td>
+			<ul class="alert-tags-list">
+				<li>
+					<span><a href="https://owasp.org/Top10/A01_2021-Broken_Access_Control/">OWASP_2021_A01</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-web-security-testing-guide/v42/4-Web_Application_Security_Testing/01-Information_Gathering/08-Fingerprint_Web_Application_Framework">WSTG-v42-INFO-08</a></span> 
+				</li>
+				<li>
+					 <span>POLICY_QA_STD = </span>
+				</li>
+				<li>
+					 <span>POLICY_PENTEST = </span>
+				</li>
+				<li>
+					<span><a href="https://www.zaproxy.org/docs/desktop/addons/common-library/alerttags/#systemic">SYSTEMIC</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-top-ten/2017/A3_2017-Sensitive_Data_Exposure.html">OWASP_2017_A03</a></span> 
+				</li>
+				<li>
+					<span><a href="https://cwe.mitre.org/data/definitions/497.html">CWE-497</a></span> 
+				</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row">Alert description</th>
+		<td> 
+<p>The web/application server is leaking information via one or more &quot;X-Powered-By&quot; HTTP response headers. Access to such information may facilitate attackers identifying other frameworks/components your web application is reliant upon and the vulnerabilities such components may be subject to.</p>
+ </td>
+	</tr>
+	
+	<tr>
+		<th scope="row">Request</th>
+		<td><details open="open">
+				<summary>Request line and header section (367 bytes)</summary>
+				
+				<pre><code>GET http://localhost:5000/img/favicon/favicon.ico HTTP/1.1
+host: localhost:5000
+user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36
+pragma: no-cache
+cache-control: no-cache
+referer: http://localhost:5000
+Cookie: sessionID=s%3A1765973047222.N9tAmNYdovT7sSjKUpZFzZCE8I9ysoalVC0FGN%2FfzUA
+
+</code></pre>
+				
+				
+			</details> <details class="request-body" open="open">
+				<summary>Request body (0 bytes)</summary>
+				
+				<pre><code></code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Response</th>
+		<td><details open="open">
+				<summary>Status line and header section (305 bytes)</summary>
+				
+				<pre><code>HTTP/1.1 200 OK
+X-Powered-By: Express
+Accept-Ranges: bytes
+Cache-Control: public, max-age=0
+Last-Modified: Tue, 16 Dec 2025 19:03:05 GMT
+ETag: W/&quot;571-19b288b6ec2&quot;
+Content-Type: image/x-icon
+Content-Length: 1393
+Date: Wed, 17 Dec 2025 12:04:07 GMT
+Connection: keep-alive
+Keep-Alive: timeout=5
+
+</code></pre>
+				
+				
+			</details> <details class="response-body" open="open">
+				<summary>Response body (1393 bytes)</summary>
+				
+				<pre><code>PNG
+
+   IHDR   0   0   Wù   	pHYs  Ä  Ä+  #IDATh½MlTUÇçÍG§¥- a!Á$.Ô¨	j¢QãÂÄÀi¡ôk `i+DÔQ#¢,.0Æ¸ .A~ `EB&quot;iÊèuÚÎ¼ãâYiÎ¼ûÞñ¼Í}çþÏùß{Þý8ª;5JiÕø¥ZÄÝÝðSå
+p	á*W.«2,6ÃÉ¤LøñS5»zô±8jhn+\E¹#ð&quot;ð[¡Àñ­]2\®c8h ¥ 9£c	,@X Üÿ_clwÞìó%;²Âð*gpÔ[ÂÓålª&amp; ½]ì|¡ &lt;A¨J
+mj×Ø¼zvÃ´ªøüÒTù1?Îål*.`ë«º&lt;VÃáP%ÿoB*U¾cÅlÞ¬áÆ¹lDé¹Á+âð
+UÒZà}7»Hn×%µ1B,/×Y8LJÖÍ(TJ-	Ñ°CX);³We¡o[t±8òýÃY8ì&amp;¤Rjý1B&quot;¢&#39;¥ÎkÅ}û··Lù&lt;eåÆW´Îä(ðì-s¡±ÑKon³ ÊÙ®YjÊg&lt;Ö&amp;9NÊ|=.&quot;G&lt;ìÄø nä{Áöâæ\¾Ql&gt;òÂg$ ©YWÏOo»îÅÍLp\ïÛUy·«KÆ¼p¹
+H¥ÔRegqûød2^\ÝÉ3@sÑ»|&gt;o¶tNk&amp;_á1à®ÙÞ]K;ùÜÐ`´&lt;~&#39;Âª6ù/wõê{&quot;¼`+Û·Ê%óÐ¸
+PXQî}úOÈdõsÀºyNmàM«Îö·®kÃ5VÅÞÖ%_{ÑxB +ÈÄQß gh®°¦£MÊ(Àd14Þ¬TÙÈd!þÚ&#39;Äç
+UhÔq.ã9zÒ~&#39;twS³ÞáÇ&amp;~ècÐªÊÏñij©¬J0°RmÎÅuC8ÝÌq®C e0ÐÝ s°gØ&quot;$+á¬­ñ&amp;Fã	^ê°9îÙ7à}ñaNæ³xÇ¯£Ù°%çZASBW*ìnâxFî]Ê­ë×û«½x.lí¥EÀZà/¯31ÿÌ9ûí¸¸oÖå(kÕ8k¾(VöËW~º.«¬x3.òSÁ&amp;½Ù,
+AYÍH@ï½ûÂ¯!&lt;
+ÁÜFhl±¿»ÂaÅ_²º/øðÆjOÒ¢º):ìÀ:çwvcåïX#·ÍÇ¨2&lt;è{]O2&lt;ìf[Sã&lt;Ù½VÒìX*%&gt;oØW¡&gt;Ý`+ßbütÔ×;÷YÇb¯®bèéÓV`JË¡¡aÖæÁ·Kÿ}1Þ&gt;} èâ(¹©é4:p¡ ¤©m)äg.­Â&lt;&gt;¸WrA8Á`#;p@­Ñ4×ñ:Sø+é4Y6íïA¸¦ÃuÊf©#`ð¶§DXµ¿_~	ÂU×´X¸,à©ZV|6ËkZÇÏB=}ú9ðþó¶°&amp;Ù&amp;ßøèk³S8ä×)fÁ²j;qX8WNCé`ÓpVuU|
+F3°eØV&#39;¡ì?Û´ÀæHeÿWðàã&gt;ÐÛ§O(¼,¢ÀeNXða[¤+¡þÍ¤²P&gt;?¢    IEND®B`</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	
+	
+	<tr>
+		<th scope="row">Evidence</th>
+		<td><pre><code>X-Powered-By: Express</code></pre></td>
+	</tr>
+	<tr>
+		<th scope="row">Solution</th>
+		<td> 
+<p>Ensure that your web server, application server, load balancer, etc. is configured to suppress &quot;X-Powered-By&quot; headers.</p>
+ </td>
+	</tr>
+</table>
+
+											</details></li>
+									</ol>
+								</li>
+								
+								<li>
+									<h5>
+										<a
+											href="#alert-type-8">X-Content-Type-Options Header Missing</a> <span>(1)</span>
+									</h5>
+									<ol>
+										<li><details>
+												<summary>
+													<span class="request-method-n-url">GET http://localhost:5000/img/favicon/favicon.ico</span>
+												</summary>
+												
+<table class="alerts-table">
+	<tr>
+		<th scope="row">Alert tags</th>
+		<td>
+			<ul class="alert-tags-list">
+				<li>
+					<span><a href="https://cwe.mitre.org/data/definitions/693.html">CWE-693</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/Top10/A05_2021-Security_Misconfiguration/">OWASP_2021_A05</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-top-ten/2017/A6_2017-Security_Misconfiguration.html">OWASP_2017_A06</a></span> 
+				</li>
+				<li>
+					 <span>POLICY_QA_STD = </span>
+				</li>
+				<li>
+					 <span>POLICY_PENTEST = </span>
+				</li>
+				<li>
+					<span><a href="https://www.zaproxy.org/docs/desktop/addons/common-library/alerttags/#systemic">SYSTEMIC</a></span> 
+				</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row">Alert description</th>
+		<td> 
+<p>The Anti-MIME-Sniffing header X-Content-Type-Options was not set to &#39;nosniff&#39;. This allows older versions of Internet Explorer and Chrome to perform MIME-sniffing on the response body, potentially causing the response body to be interpreted and displayed as a content type other than the declared content type. Current (early 2014) and legacy versions of Firefox will use the declared content type (if one is set), rather than performing MIME-sniffing.</p>
+ </td>
+	</tr>
+	<tr>
+		<th scope="row">Other info</th>
+		<td> 
+<p>This issue still applies to error type pages (401, 403, 500, etc.) as those pages are often still affected by injection issues, in which case there is still concern for browsers sniffing pages away from their actual content type.</p>
+
+<p>At &quot;High&quot; threshold this scan rule will not alert on client or server error responses.</p>
+ </td>
+	</tr>
+	<tr>
+		<th scope="row">Request</th>
+		<td><details open="open">
+				<summary>Request line and header section (367 bytes)</summary>
+				
+				<pre><code>GET http://localhost:5000/img/favicon/favicon.ico HTTP/1.1
+host: localhost:5000
+user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36
+pragma: no-cache
+cache-control: no-cache
+referer: http://localhost:5000
+Cookie: sessionID=s%3A1765973047222.N9tAmNYdovT7sSjKUpZFzZCE8I9ysoalVC0FGN%2FfzUA
+
+</code></pre>
+				
+				
+			</details> <details class="request-body" open="open">
+				<summary>Request body (0 bytes)</summary>
+				
+				<pre><code></code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Response</th>
+		<td><details open="open">
+				<summary>Status line and header section (305 bytes)</summary>
+				
+				<pre><code>HTTP/1.1 200 OK
+X-Powered-By: Express
+Accept-Ranges: bytes
+Cache-Control: public, max-age=0
+Last-Modified: Tue, 16 Dec 2025 19:03:05 GMT
+ETag: W/&quot;571-19b288b6ec2&quot;
+Content-Type: image/x-icon
+Content-Length: 1393
+Date: Wed, 17 Dec 2025 12:04:07 GMT
+Connection: keep-alive
+Keep-Alive: timeout=5
+
+</code></pre>
+				
+				
+			</details> <details class="response-body" open="open">
+				<summary>Response body (1393 bytes)</summary>
+				
+				<pre><code>PNG
+
+   IHDR   0   0   Wù   	pHYs  Ä  Ä+  #IDATh½MlTUÇçÍG§¥- a!Á$.Ô¨	j¢QãÂÄÀi¡ôk `i+DÔQ#¢,.0Æ¸ .A~ `EB&quot;iÊèuÚÎ¼ãâYiÎ¼ûÞñ¼Í}çþÏùß{Þý8ª;5JiÕø¥ZÄÝÝðSå
+p	á*W.«2,6ÃÉ¤LøñS5»zô±8jhn+\E¹#ð&quot;ð[¡Àñ­]2\®c8h ¥ 9£c	,@X Üÿ_clwÞìó%;²Âð*gpÔ[ÂÓålª&amp; ½]ì|¡ &lt;A¨J
+mj×Ø¼zvÃ´ªøüÒTù1?Îål*.`ë«º&lt;VÃáP%ÿoB*U¾cÅlÞ¬áÆ¹lDé¹Á+âð
+UÒZà}7»Hn×%µ1B,/×Y8LJÖÍ(TJ-	Ñ°CX);³We¡o[t±8òýÃY8ì&amp;¤Rjý1B&quot;¢&#39;¥ÎkÅ}û··Lù&lt;eåÆW´Îä(ðì-s¡±ÑKon³ ÊÙ®YjÊg&lt;Ö&amp;9NÊ|=.&quot;G&lt;ìÄø nä{Áöâæ\¾Ql&gt;òÂg$ ©YWÏOo»îÅÍLp\ïÛUy·«KÆ¼p¹
+H¥ÔRegqûød2^\ÝÉ3@sÑ»|&gt;o¶tNk&amp;_á1à®ÙÞ]K;ùÜÐ`´&lt;~&#39;Âª6ù/wõê{&quot;¼`+Û·Ê%óÐ¸
+PXQî}úOÈdõsÀºyNmàM«Îö·®kÃ5VÅÞÖ%_{ÑxB +ÈÄQß gh®°¦£MÊ(Àd14Þ¬TÙÈd!þÚ&#39;Äç
+UhÔq.ã9zÒ~&#39;twS³ÞáÇ&amp;~ècÐªÊÏñij©¬J0°RmÎÅuC8ÝÌq®C e0ÐÝ s°gØ&quot;$+á¬­ñ&amp;Fã	^ê°9îÙ7à}ñaNæ³xÇ¯£Ù°%çZASBW*ìnâxFî]Ê­ë×û«½x.lí¥EÀZà/¯31ÿÌ9ûí¸¸oÖå(kÕ8k¾(VöËW~º.«¬x3.òSÁ&amp;½Ù,
+AYÍH@ï½ûÂ¯!&lt;
+ÁÜFhl±¿»ÂaÅ_²º/øðÆjOÒ¢º):ìÀ:çwvcåïX#·ÍÇ¨2&lt;è{]O2&lt;ìf[Sã&lt;Ù½VÒìX*%&gt;oØW¡&gt;Ý`+ßbütÔ×;÷YÇb¯®bèéÓV`JË¡¡aÖæÁ·Kÿ}1Þ&gt;} èâ(¹©é4:p¡ ¤©m)äg.­Â&lt;&gt;¸WrA8Á`#;p@­Ñ4×ñ:Sø+é4Y6íïA¸¦ÃuÊf©#`ð¶§DXµ¿_~	ÂU×´X¸,à©ZV|6ËkZÇÏB=}ú9ðþó¶°&amp;Ù&amp;ßøèk³S8ä×)fÁ²j;qX8WNCé`ÓpVuU|
+F3°eØV&#39;¡ì?Û´ÀæHeÿWðàã&gt;ÐÛ§O(¼,¢ÀeNXða[¤+¡þÍ¤²P&gt;?¢    IEND®B`</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Parameter</th>
+		<td><pre><code>x-content-type-options</code></pre></td>
+	</tr>
+	
+	
+	<tr>
+		<th scope="row">Solution</th>
+		<td> 
+<p>Ensure that the application/web server sets the Content-Type header appropriately, and that it sets the X-Content-Type-Options header to &#39;nosniff&#39; for all web pages.</p>
+
+<p>If possible, ensure that the end user uses a standards-compliant and modern web browser that does not perform MIME-sniffing at all, or that can be directed by the web application/web server to not perform MIME-sniffing.</p>
+ </td>
+	</tr>
+</table>
+
+											</details></li>
+									</ol>
+								</li>
+								
+							</ol>
+						</li>
+						
+					</ol>
+				</li>
+				
+				
+				  
+				 
+				
+				
+				
+				
+				<li id="alerts--risk-0-confidence-2">
+					<h3>
+						<span>Risk</span>=<span
+							class="risk-level">Informational</span>, <span>Confidence</span>=<span
+							class="confidence-level">Medium</span> <span>(1)</span>
+					</h3>
+					<ol>
+						
+						
+						
+						<li class="alerts--site-li">
+							<h4>
+								<span class="site">http://localhost:5000</span> <span>(1)</span>
+							</h4>
+							<ol>
+								
+								<li>
+									<h5>
+										<a
+											href="#alert-type-10">Session Management Response Identified</a> <span>(1)</span>
+									</h5>
+									<ol>
+										<li><details>
+												<summary>
+													<span class="request-method-n-url">GET http://localhost:5000</span>
+												</summary>
+												
+<table class="alerts-table">
+	<tr>
+		<th scope="row">Alert tags</th>
+		<td>
+			<ul class="alert-tags-list">
+				
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row">Alert description</th>
+		<td> 
+<p>The given response has been identified as containing a session management token. The &#39;Other Info&#39; field contains a set of header tokens that can be used in the Header Based Session Management Method. If the request is in a context which has a Session Management Method set to &quot;Auto-Detect&quot; then this rule will change the session management to use the tokens identified.</p>
+ </td>
+	</tr>
+	<tr>
+		<th scope="row">Other info</th>
+		<td> 
+<p>cookie:sessionID</p>
+ </td>
+	</tr>
+	<tr>
+		<th scope="row">Request</th>
+		<td><details open="open">
+				<summary>Request line and header section (228 bytes)</summary>
+				
+				<pre><code>GET http://localhost:5000 HTTP/1.1
+host: localhost:5000
+user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36
+pragma: no-cache
+cache-control: no-cache
+
+</code></pre>
+				
+				
+			</details> <details class="request-body" open="open">
+				<summary>Request body (0 bytes)</summary>
+				
+				<pre><code></code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Response</th>
+		<td><details open="open">
+				<summary>Status line and header section (381 bytes)</summary>
+				
+				<pre><code>HTTP/1.1 200 OK
+X-Powered-By: Express
+Content-Type: text/html; charset=utf-8
+Content-Length: 11224
+ETag: W/&quot;2bd8-n7HfgSIXTAmCViCVIYWUaFuKUf4&quot;
+Set-Cookie: sessionID=s%3A1765973047222.N9tAmNYdovT7sSjKUpZFzZCE8I9ysoalVC0FGN%2FfzUA; Path=/; Expires=Thu, 16 Apr 2026 12:04:07 GMT; SameSite=Lax
+Date: Wed, 17 Dec 2025 12:04:07 GMT
+Connection: keep-alive
+Keep-Alive: timeout=5
+
+</code></pre>
+				
+				
+			</details> <details class="response-body">
+				<summary>Response body (11224 bytes)</summary>
+				
+				<pre><code>&lt;!DOCTYPE html&gt;
+
+&lt;!-- =========================================================
+* Sneat - Bootstrap 5 HTML Admin Template - Pro | v1.0.0
+==============================================================
+
+* Product Page: https://themeselection.com/products/sneat-bootstrap-html-admin-template/
+* Created by: ThemeSelection
+* License: You must have a valid license purchased in order to legally use the theme for your project.
+* Copyright ThemeSelection (https://themeselection.com)
+
+=========================================================
+ --&gt;
+&lt;!-- beautify ignore:start --&gt;
+&lt;html
+  lang=&quot;en&quot;
+  class=&quot;light-style customizer-hide&quot;
+  dir=&quot;ltr&quot;
+  data-theme=&quot;theme-default&quot;
+  data-assets-path=&quot;/&quot;
+  data-template=&quot;vertical-menu-template-free&quot;
+&gt;
+  &lt;head&gt;
+    &lt;meta charset=&quot;utf-8&quot; /&gt;
+    &lt;meta
+      name=&quot;viewport&quot;
+      content=&quot;width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0&quot;
+    /&gt;
+
+    &lt;title&gt;Login Basic - Pages | Sneat - Bootstrap 5 HTML Admin Template - Pro&lt;/title&gt;
+
+    &lt;meta name=&quot;description&quot; content=&quot;&quot; /&gt;
+
+    &lt;!-- Favicon --&gt;
+    &lt;link rel=&quot;icon&quot; type=&quot;image/x-icon&quot; href=&quot;/img/favicon/favicon.ico&quot; /&gt;
+
+    &lt;!-- Fonts --&gt;
+    &lt;link rel=&quot;preconnect&quot; href=&quot;https://fonts.googleapis.com&quot; /&gt;
+    &lt;link rel=&quot;preconnect&quot; href=&quot;https://fonts.gstatic.com&quot; crossorigin /&gt;
+    &lt;link
+      href=&quot;https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&amp;display=swap&quot;
+      rel=&quot;stylesheet&quot;
+    /&gt;
+
+    &lt;!-- Icons. Uncomment required icon fonts --&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;/vendor/fonts/boxicons.css&quot; /&gt;
+
+    &lt;!-- Core CSS --&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;/vendor/css/core.css&quot; class=&quot;template-customizer-core-css&quot; /&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;/vendor/css/theme-default.css&quot; class=&quot;template-customizer-theme-css&quot; /&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;/css/demo.css&quot; /&gt;
+
+    &lt;!-- Vendors CSS --&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;/vendor/libs/perfect-scrollbar/perfect-scrollbar.css&quot; /&gt;
+
+    &lt;!-- Page CSS --&gt;
+    &lt;!-- Page --&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;/vendor/css/pages/page-auth.css&quot; /&gt;
+    &lt;!-- Helpers --&gt;
+    &lt;script src=&quot;/vendor/js/helpers.js&quot;&gt;&lt;/script&gt;
+
+    &lt;!--! Template customizer &amp; Theme config files MUST be included after core stylesheets and helpers.js in the &lt;head&gt; section --&gt;
+    &lt;!--? Config:  Mandatory theme config file contain global vars &amp; default theme options, Set your preferred theme option in this file.  --&gt;
+    &lt;script src=&quot;/js/config.js&quot;&gt;&lt;/script&gt;
+  &lt;/head&gt;
+
+  &lt;body&gt;
+    &lt;!-- Content --&gt;
+
+    &lt;div class=&quot;container-xxl&quot;&gt;
+      &lt;div class=&quot;authentication-wrapper authentication-basic container-p-y&quot;&gt;
+        &lt;div class=&quot;authentication-inner&quot;&gt;
+          &lt;!-- Register --&gt;
+          &lt;div class=&quot;card&quot;&gt;
+            &lt;div class=&quot;card-body&quot;&gt;
+              &lt;!-- Logo --&gt;
+              &lt;div class=&quot;app-brand justify-content-center&quot;&gt;
+                &lt;a href=&quot;index.html&quot; class=&quot;app-brand-link gap-2&quot;&gt;
+                  &lt;span class=&quot;app-brand-logo demo&quot;&gt;
+                    &lt;svg
+                      width=&quot;25&quot;
+                      viewBox=&quot;0 0 25 42&quot;
+                      version=&quot;1.1&quot;
+                      xmlns=&quot;http://www.w3.org/2000/svg&quot;
+                      xmlns:xlink=&quot;http://www.w3.org/1999/xlink&quot;
+                    &gt;
+                      &lt;defs&gt;
+                        &lt;path
+                          d=&quot;M13.7918663,0.358365126 L3.39788168,7.44174259 C0.566865006,9.69408886 -0.379795268,12.4788597 0.557900856,15.7960551 C0.68998853,16.2305145 1.09562888,17.7872135 3.12357076,19.2293357 C3.8146334,19.7207684 5.32369333,20.3834223 7.65075054,21.2172976 L7.59773219,21.2525164 L2.63468769,24.5493413 C0.445452254,26.3002124 0.0884951797,28.5083815 1.56381646,31.1738486 C2.83770406,32.8170431 5.20850219,33.2640127 7.09180128,32.5391577 C8.347334,32.0559211 11.4559176,30.0011079 16.4175519,26.3747182 C18.0338572,24.4997857 18.6973423,22.4544883 18.4080071,20.2388261 C17.963753,17.5346866 16.1776345,15.5799961 13.0496516,14.3747546 L10.9194936,13.4715819 L18.6192054,7.984237 L13.7918663,0.358365126 Z&quot;
+                          id=&quot;path-1&quot;
+                        &gt;&lt;/path&gt;
+                        &lt;path
+                          d=&quot;M5.47320593,6.00457225 C4.05321814,8.216144 4.36334763,10.0722806 6.40359441,11.5729822 C8.61520715,12.571656 10.0999176,13.2171421 10.8577257,13.5094407 L15.5088241,14.433041 L18.6192054,7.984237 C15.5364148,3.11535317 13.9273018,0.573395879 13.7918663,0.358365126 C13.5790555,0.511491653 10.8061687,2.3935607 5.47320593,6.00457225 Z&quot;
+                          id=&quot;path-3&quot;
+                        &gt;&lt;/path&gt;
+                        &lt;path
+                          d=&quot;M7.50063644,21.2294429 L12.3234468,23.3159332 C14.1688022,24.7579751 14.397098,26.4880487 13.008334,28.506154 C11.6195701,30.5242593 10.3099883,31.790241 9.07958868,32.3040991 C5.78142938,33.4346997 4.13234973,34 4.13234973,34 C4.13234973,34 2.75489982,33.0538207 2.37032616e-14,31.1614621 C-0.55822714,27.8186216 -0.55822714,26.0572515 -4.05231404e-15,25.8773518 C0.83734071,25.6075023 2.77988457,22.8248993 3.3049379,22.52991 C3.65497346,22.3332504 5.05353963,21.8997614 7.50063644,21.2294429 Z&quot;
+                          id=&quot;path-4&quot;
+                        &gt;&lt;/path&gt;
+                        &lt;path
+                          d=&quot;M20.6,7.13333333 L25.6,13.8 C26.2627417,14.6836556 26.0836556,15.9372583 25.2,16.6 C24.8538077,16.8596443 24.4327404,17 24,17 L14,17 C12.8954305,17 12,16.1045695 12,15 C12,14.5672596 12.1403557,14.1461923 12.4,13.8 L17.4,7.13333333 C18.0627417,6.24967773 19.3163444,6.07059163 20.2,6.73333333 C20.3516113,6.84704183 20.4862915,6.981722 20.6,7.13333333 Z&quot;
+                          id=&quot;path-5&quot;
+                        &gt;&lt;/path&gt;
+                      &lt;/defs&gt;
+                      &lt;g id=&quot;g-app-brand&quot; stroke=&quot;none&quot; stroke-width=&quot;1&quot; fill=&quot;none&quot; fill-rule=&quot;evenodd&quot;&gt;
+                        &lt;g id=&quot;Brand-Logo&quot; transform=&quot;translate(-27.000000, -15.000000)&quot;&gt;
+                          &lt;g id=&quot;Icon&quot; transform=&quot;translate(27.000000, 15.000000)&quot;&gt;
+                            &lt;g id=&quot;Mask&quot; transform=&quot;translate(0.000000, 8.000000)&quot;&gt;
+                              &lt;mask id=&quot;mask-2&quot; fill=&quot;white&quot;&gt;
+                                &lt;use xlink:href=&quot;#path-1&quot;&gt;&lt;/use&gt;
+                              &lt;/mask&gt;
+                              &lt;use fill=&quot;#696cff&quot; xlink:href=&quot;#path-1&quot;&gt;&lt;/use&gt;
+                              &lt;g id=&quot;Path-3&quot; mask=&quot;url(#mask-2)&quot;&gt;
+                                &lt;use fill=&quot;#696cff&quot; xlink:href=&quot;#path-3&quot;&gt;&lt;/use&gt;
+                                &lt;use fill-opacity=&quot;0.2&quot; fill=&quot;#FFFFFF&quot; xlink:href=&quot;#path-3&quot;&gt;&lt;/use&gt;
+                              &lt;/g&gt;
+                              &lt;g id=&quot;Path-4&quot; mask=&quot;url(#mask-2)&quot;&gt;
+                                &lt;use fill=&quot;#696cff&quot; xlink:href=&quot;#path-4&quot;&gt;&lt;/use&gt;
+                                &lt;use fill-opacity=&quot;0.2&quot; fill=&quot;#FFFFFF&quot; xlink:href=&quot;#path-4&quot;&gt;&lt;/use&gt;
+                              &lt;/g&gt;
+                            &lt;/g&gt;
+                            &lt;g
+                              id=&quot;Triangle&quot;
+                              transform=&quot;translate(19.000000, 11.000000) rotate(-300.000000) translate(-19.000000, -11.000000) &quot;
+                            &gt;
+                              &lt;use fill=&quot;#696cff&quot; xlink:href=&quot;#path-5&quot;&gt;&lt;/use&gt;
+                              &lt;use fill-opacity=&quot;0.2&quot; fill=&quot;#FFFFFF&quot; xlink:href=&quot;#path-5&quot;&gt;&lt;/use&gt;
+                            &lt;/g&gt;
+                          &lt;/g&gt;
+                        &lt;/g&gt;
+                      &lt;/g&gt;
+                    &lt;/svg&gt;
+                  &lt;/span&gt;
+                  &lt;span class=&quot;app-brand-text demo text-body fw-bolder&quot;&gt;Sneat&lt;/span&gt;
+                &lt;/a&gt;
+              &lt;/div&gt;
+              &lt;!-- /Logo --&gt;
+              &lt;h4 class=&quot;mb-2&quot;&gt;Welcome to Sneat! 👋&lt;/h4&gt;
+              &lt;p class=&quot;mb-4&quot;&gt;Please log in to continue&lt;/p&gt;
+
+              &lt;form id=&quot;formAuthentication&quot; class=&quot;mb-3&quot; action=&quot;/login&quot; method=&quot;GET&quot;&gt;
+                &lt;div class=&quot;mb-3&quot;&gt;
+                  &lt;label for=&quot;email&quot; class=&quot;form-label&quot;&gt;Email or Username&lt;/label&gt;
+                  &lt;input
+                    type=&quot;text&quot;
+                    class=&quot;form-control&quot;
+                    id=&quot;email&quot;
+                    name=&quot;email&quot;
+                    placeholder=&quot;Enter your email or username&quot;
+                    autofocus
+                  /&gt;
+                &lt;/div&gt;
+                &lt;div class=&quot;mb-3 form-password-toggle&quot;&gt;
+                  &lt;div class=&quot;d-flex justify-content-between&quot;&gt;
+                    &lt;label class=&quot;form-label&quot; for=&quot;password&quot;&gt;Password&lt;/label&gt;
+                    &lt;!-- &lt;a href=&quot;auth-forgot-password-basic.html&quot;&gt;
+                      &lt;small&gt;Forgot Password?&lt;/small&gt;
+                    &lt;/a&gt; --&gt;
+                  &lt;/div&gt;
+                  &lt;div class=&quot;input-group input-group-merge&quot;&gt;
+                    &lt;input
+                      type=&quot;password&quot;
+                      id=&quot;password&quot;
+                      class=&quot;form-control&quot;
+                      name=&quot;password&quot;
+                      placeholder=&quot;&amp;#xb7;&amp;#xb7;&amp;#xb7;&amp;#xb7;&amp;#xb7;&amp;#xb7;&amp;#xb7;&amp;#xb7;&amp;#xb7;&amp;#xb7;&amp;#xb7;&amp;#xb7;&quot;
+                      aria-describedby=&quot;password&quot;
+                    /&gt;
+                    &lt;span class=&quot;input-group-text cursor-pointer&quot;&gt;&lt;i class=&quot;bx bx-hide&quot;&gt;&lt;/i&gt;&lt;/span&gt;
+                  &lt;/div&gt;
+                &lt;/div&gt;
+                &lt;div class=&quot;mb-3&quot;&gt;
+                  &lt;div class=&quot;form-check&quot;&gt;
+                    &lt;input class=&quot;form-check-input&quot; type=&quot;checkbox&quot; id=&quot;remember-me&quot; /&gt;
+                    &lt;label class=&quot;form-check-label&quot; for=&quot;remember-me&quot;&gt; Remember Me &lt;/label&gt;
+                  &lt;/div&gt;
+                &lt;/div&gt;
+                &lt;div class=&quot;mb-3&quot;&gt;
+                  &lt;button class=&quot;btn btn-primary d-grid w-100&quot; type=&quot;submit&quot;&gt;Sign in&lt;/button&gt;
+                &lt;/div&gt;
+              &lt;/form&gt;
+
+              &lt;p class=&quot;text-center&quot;&gt;
+                &lt;span&gt;New on our platform?&lt;/span&gt;
+                &lt;a href=&quot;/register&quot;&gt;
+                  &lt;span&gt;Create an account&lt;/span&gt;
+                &lt;/a&gt;
+              &lt;/p&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+          &lt;!-- /Register --&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;!-- / Content --&gt;
+
+    &lt;div class=&quot;buy-now&quot;&gt;
+      &lt;a
+        href=&quot;https://themeselection.com/products/sneat-bootstrap-html-admin-template/&quot;
+        target=&quot;_blank&quot;
+        class=&quot;btn btn-danger btn-buy-now&quot;
+        &gt;Upgrade to Pro&lt;/a
+      &gt;
+    &lt;/div&gt;
+
+    &lt;!-- Core JS --&gt;
+    &lt;!-- build:js assets/vendor/js/core.js --&gt;
+    &lt;script src=&quot;/vendor/libs/jquery/jquery.js&quot;&gt;&lt;/script&gt;
+    &lt;script src=&quot;/vendor/libs/popper/popper.js&quot;&gt;&lt;/script&gt;
+    &lt;script src=&quot;/vendor/js/bootstrap.js&quot;&gt;&lt;/script&gt;
+    &lt;script src=&quot;/vendor/libs/perfect-scrollbar/perfect-scrollbar.js&quot;&gt;&lt;/script&gt;
+
+    &lt;script src=&quot;/vendor/js/menu.js&quot;&gt;&lt;/script&gt;
+    &lt;!-- endbuild --&gt;
+
+    &lt;!-- Vendors JS --&gt;
+
+    &lt;!-- Main JS --&gt;
+    &lt;script src=&quot;/js/main.js&quot;&gt;&lt;/script&gt;
+
+    &lt;!-- Page JS --&gt;
+
+    &lt;!-- Place this tag in your head or just before your close body tag. --&gt;
+    &lt;script async defer src=&quot;https://buttons.github.io/buttons.js&quot;&gt;&lt;/script&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Parameter</th>
+		<td><pre><code>sessionID</code></pre></td>
+	</tr>
+	
+	<tr>
+		<th scope="row">Evidence</th>
+		<td><pre><code>sessionID</code></pre></td>
+	</tr>
+	<tr>
+		<th scope="row">Solution</th>
+		<td> 
+<p>This is an informational alert rather than a vulnerability and so there is nothing to fix.</p>
+ </td>
+	</tr>
+</table>
+
+											</details></li>
+									</ol>
+								</li>
+								
+							</ol>
+						</li>
+						
+					</ol>
+				</li>
+				
+				<li id="alerts--risk-0-confidence-1">
+					<h3>
+						<span>Risk</span>=<span
+							class="risk-level">Informational</span>, <span>Confidence</span>=<span
+							class="confidence-level">Low</span> <span>(1)</span>
+					</h3>
+					<ol>
+						
+						
+						
+						<li class="alerts--site-li">
+							<h4>
+								<span class="site">http://localhost:5000</span> <span>(1)</span>
+							</h4>
+							<ol>
+								
+								<li>
+									<h5>
+										<a
+											href="#alert-type-9">Information Disclosure - Suspicious Comments</a> <span>(1)</span>
+									</h5>
+									<ol>
+										<li><details>
+												<summary>
+													<span class="request-method-n-url">GET http://localhost:5000/js/main.js</span>
+												</summary>
+												
+<table class="alerts-table">
+	<tr>
+		<th scope="row">Alert tags</th>
+		<td>
+			<ul class="alert-tags-list">
+				<li>
+					<span><a href="https://owasp.org/Top10/A01_2021-Broken_Access_Control/">OWASP_2021_A01</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-web-security-testing-guide/v42/4-Web_Application_Security_Testing/01-Information_Gathering/05-Review_Webpage_Content_for_Information_Leakage">WSTG-v42-INFO-05</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-top-ten/2017/A3_2017-Sensitive_Data_Exposure.html">OWASP_2017_A03</a></span> 
+				</li>
+				<li>
+					 <span>POLICY_PENTEST = </span>
+				</li>
+				<li>
+					<span><a href="https://cwe.mitre.org/data/definitions/615.html">CWE-615</a></span> 
+				</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row">Alert description</th>
+		<td> 
+<p>The response appears to contain suspicious comments which may help an attacker.</p>
+ </td>
+	</tr>
+	<tr>
+		<th scope="row">Other info</th>
+		<td> 
+<p>The following pattern was used: \bFROM\b and was detected in likely comment: &quot;// If current layout is horizontal OR current window screen is small (overlay menu) than return from here&quot;, see evidence field for the suspicious comment/snippet.</p>
+ </td>
+	</tr>
+	<tr>
+		<th scope="row">Request</th>
+		<td><details open="open">
+				<summary>Request line and header section (354 bytes)</summary>
+				
+				<pre><code>GET http://localhost:5000/js/main.js HTTP/1.1
+host: localhost:5000
+user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36
+pragma: no-cache
+cache-control: no-cache
+referer: http://localhost:5000
+Cookie: sessionID=s%3A1765973047222.N9tAmNYdovT7sSjKUpZFzZCE8I9ysoalVC0FGN%2FfzUA
+
+</code></pre>
+				
+				
+			</details> <details class="request-body" open="open">
+				<summary>Request body (0 bytes)</summary>
+				
+				<pre><code></code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Response</th>
+		<td><details open="open">
+				<summary>Status line and header section (330 bytes)</summary>
+				
+				<pre><code>HTTP/1.1 200 OK
+X-Powered-By: Express
+Accept-Ranges: bytes
+Cache-Control: public, max-age=0
+Last-Modified: Tue, 16 Dec 2025 19:03:05 GMT
+ETag: W/&quot;f7c-19b288b6ece&quot;
+Content-Type: application/javascript; charset=UTF-8
+Content-Length: 3964
+Date: Wed, 17 Dec 2025 12:04:07 GMT
+Connection: keep-alive
+Keep-Alive: timeout=5
+
+</code></pre>
+				
+				
+			</details> <details class="response-body">
+				<summary>Response body (3964 bytes)</summary>
+				
+				<pre><code>/**
+ * Main
+ */
+
+&#39;use strict&#39;;
+
+let menu, animate;
+
+(function () {
+  // Initialize menu
+  //-----------------
+
+  let layoutMenuEl = document.querySelectorAll(&#39;#layout-menu&#39;);
+  layoutMenuEl.forEach(function (element) {
+    menu = new Menu(element, {
+      orientation: &#39;vertical&#39;,
+      closeChildren: false
+    });
+    // Change parameter to true if you want scroll animation
+    window.Helpers.scrollToActive((animate = false));
+    window.Helpers.mainMenu = menu;
+  });
+
+  // Initialize menu togglers and bind click on each
+  let menuToggler = document.querySelectorAll(&#39;.layout-menu-toggle&#39;);
+  menuToggler.forEach(item =&gt; {
+    item.addEventListener(&#39;click&#39;, event =&gt; {
+      event.preventDefault();
+      window.Helpers.toggleCollapsed();
+    });
+  });
+
+  // Display menu toggle (layout-menu-toggle) on hover with delay
+  let delay = function (elem, callback) {
+    let timeout = null;
+    elem.onmouseenter = function () {
+      // Set timeout to be a timer which will invoke callback after 300ms (not for small screen)
+      if (!Helpers.isSmallScreen()) {
+        timeout = setTimeout(callback, 300);
+      } else {
+        timeout = setTimeout(callback, 0);
+      }
+    };
+
+    elem.onmouseleave = function () {
+      // Clear any timers set to timeout
+      document.querySelector(&#39;.layout-menu-toggle&#39;).classList.remove(&#39;d-block&#39;);
+      clearTimeout(timeout);
+    };
+  };
+  if (document.getElementById(&#39;layout-menu&#39;)) {
+    delay(document.getElementById(&#39;layout-menu&#39;), function () {
+      // not for small screen
+      if (!Helpers.isSmallScreen()) {
+        document.querySelector(&#39;.layout-menu-toggle&#39;).classList.add(&#39;d-block&#39;);
+      }
+    });
+  }
+
+  // Display in main menu when menu scrolls
+  let menuInnerContainer = document.getElementsByClassName(&#39;menu-inner&#39;),
+    menuInnerShadow = document.getElementsByClassName(&#39;menu-inner-shadow&#39;)[0];
+  if (menuInnerContainer.length &gt; 0 &amp;&amp; menuInnerShadow) {
+    menuInnerContainer[0].addEventListener(&#39;ps-scroll-y&#39;, function () {
+      if (this.querySelector(&#39;.ps__thumb-y&#39;).offsetTop) {
+        menuInnerShadow.style.display = &#39;block&#39;;
+      } else {
+        menuInnerShadow.style.display = &#39;none&#39;;
+      }
+    });
+  }
+
+  // Init helpers &amp; misc
+  // --------------------
+
+  // Init BS Tooltip
+  const tooltipTriggerList = [].slice.call(document.querySelectorAll(&#39;[data-bs-toggle=&quot;tooltip&quot;]&#39;));
+  tooltipTriggerList.map(function (tooltipTriggerEl) {
+    return new bootstrap.Tooltip(tooltipTriggerEl);
+  });
+
+  // Accordion active class
+  const accordionActiveFunction = function (e) {
+    if (e.type == &#39;show.bs.collapse&#39; || e.type == &#39;show.bs.collapse&#39;) {
+      e.target.closest(&#39;.accordion-item&#39;).classList.add(&#39;active&#39;);
+    } else {
+      e.target.closest(&#39;.accordion-item&#39;).classList.remove(&#39;active&#39;);
+    }
+  };
+
+  const accordionTriggerList = [].slice.call(document.querySelectorAll(&#39;.accordion&#39;));
+  const accordionList = accordionTriggerList.map(function (accordionTriggerEl) {
+    accordionTriggerEl.addEventListener(&#39;show.bs.collapse&#39;, accordionActiveFunction);
+    accordionTriggerEl.addEventListener(&#39;hide.bs.collapse&#39;, accordionActiveFunction);
+  });
+
+  // Auto update layout based on screen size
+  window.Helpers.setAutoUpdate(true);
+
+  // Toggle Password Visibility
+  window.Helpers.initPasswordToggle();
+
+  // Speech To Text
+  window.Helpers.initSpeechToText();
+
+  // Manage menu expanded/collapsed with templateCustomizer &amp; local storage
+  //------------------------------------------------------------------
+
+  // If current layout is horizontal OR current window screen is small (overlay menu) than return from here
+  if (window.Helpers.isSmallScreen()) {
+    return;
+  }
+
+  // If current layout is vertical and current window screen is &gt; small
+
+  // Auto update menu collapsed/expanded based on the themeConfig
+  window.Helpers.setCollapsed(true, false);
+})();
+</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	
+	
+	<tr>
+		<th scope="row">Evidence</th>
+		<td><pre><code>from</code></pre></td>
+	</tr>
+	<tr>
+		<th scope="row">Solution</th>
+		<td> 
+<p>Remove all comments that return information that may help an attacker and fix any underlying problems they refer to.</p>
+ </td>
+	</tr>
+</table>
+
+											</details></li>
+									</ol>
+								</li>
+								
+							</ol>
+						</li>
+						
+					</ol>
+				</li>
+				  
+			</ol>
+		</section>
+
+		<section id="appendix" class="appendix">
+			<h2>Appendix</h2>
+
+			<section id="alert-types" class="alert-types">
+				<h3>Alert Types</h3>
+				<p class="alert-types-intro">This section contains additional information on the types of alerts in the report.</p>
+				<ol>
+					<li
+						id="alert-type-0">
+						<h4>CSP: Failure to Define Directive with No Fallback</h4>
+						<table class="alert-types-table">
+							<tr>
+								<th scope="row">Source</th>
+								<td>
+									
+									   <span>raised by a passive scanner</span> <span>(<a
+										href="https://www.zaproxy.org/docs/alerts/10055/">CSP</a>)
+									</span>   
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">CWE ID</th>
+								<td><a
+									href="https://cwe.mitre.org/data/definitions/693.html">693</a></td>
+							</tr>
+							<tr>
+								<th scope="row">WASC ID</th>
+								<td>15</td>
+							</tr>
+							<tr>
+								<th scope="row">Reference</th>
+								<td>
+									<ol>
+										<li><a
+											href="https://www.w3.org/TR/CSP/">https://www.w3.org/TR/CSP/</a></li>
+										<li><a
+											href="https://caniuse.com/#search=content+security+policy">https://caniuse.com/#search=content+security+policy</a></li>
+										<li><a
+											href="https://content-security-policy.com/">https://content-security-policy.com/</a></li>
+										<li><a
+											href="https://github.com/HtmlUnit/htmlunit-csp">https://github.com/HtmlUnit/htmlunit-csp</a></li>
+										<li><a
+											href="https://web.dev/articles/csp#resource-options">https://web.dev/articles/csp#resource-options</a></li>
+									</ol>
+								</td>
+							</tr>
+						</table>
+					</li>
+					<li
+						id="alert-type-1">
+						<h4>Content Security Policy (CSP) Header Not Set</h4>
+						<table class="alert-types-table">
+							<tr>
+								<th scope="row">Source</th>
+								<td>
+									
+									   <span>raised by a passive scanner</span> <span>(<a
+										href="https://www.zaproxy.org/docs/alerts/10038/">Content Security Policy (CSP) Header Not Set</a>)
+									</span>   
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">CWE ID</th>
+								<td><a
+									href="https://cwe.mitre.org/data/definitions/693.html">693</a></td>
+							</tr>
+							<tr>
+								<th scope="row">WASC ID</th>
+								<td>15</td>
+							</tr>
+							<tr>
+								<th scope="row">Reference</th>
+								<td>
+									<ol>
+										<li><a
+											href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/CSP">https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/CSP</a></li>
+										<li><a
+											href="https://cheatsheetseries.owasp.org/cheatsheets/Content_Security_Policy_Cheat_Sheet.html">https://cheatsheetseries.owasp.org/cheatsheets/Content_Security_Policy_Cheat_Sheet.html</a></li>
+										<li><a
+											href="https://www.w3.org/TR/CSP/">https://www.w3.org/TR/CSP/</a></li>
+										<li><a
+											href="https://w3c.github.io/webappsec-csp/">https://w3c.github.io/webappsec-csp/</a></li>
+										<li><a
+											href="https://web.dev/articles/csp">https://web.dev/articles/csp</a></li>
+										<li><a
+											href="https://caniuse.com/#feat=contentsecuritypolicy">https://caniuse.com/#feat=contentsecuritypolicy</a></li>
+										<li><a
+											href="https://content-security-policy.com/">https://content-security-policy.com/</a></li>
+									</ol>
+								</td>
+							</tr>
+						</table>
+					</li>
+					<li
+						id="alert-type-2">
+						<h4>HTTP Only Site</h4>
+						<table class="alert-types-table">
+							<tr>
+								<th scope="row">Source</th>
+								<td>
+									
+									   <span>raised by an active scanner</span> <span>(<a
+										href="https://www.zaproxy.org/docs/alerts/10106/">HTTP Only Site</a>)
+									</span>   
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">CWE ID</th>
+								<td><a
+									href="https://cwe.mitre.org/data/definitions/311.html">311</a></td>
+							</tr>
+							<tr>
+								<th scope="row">WASC ID</th>
+								<td>4</td>
+							</tr>
+							<tr>
+								<th scope="row">Reference</th>
+								<td>
+									<ol>
+										<li><a
+											href="https://cheatsheetseries.owasp.org/cheatsheets/Transport_Layer_Protection_Cheat_Sheet.html">https://cheatsheetseries.owasp.org/cheatsheets/Transport_Layer_Protection_Cheat_Sheet.html</a></li>
+										<li><a
+											href="https://letsencrypt.org/">https://letsencrypt.org/</a></li>
+									</ol>
+								</td>
+							</tr>
+						</table>
+					</li>
+					<li
+						id="alert-type-3">
+						<h4>Missing Anti-clickjacking Header</h4>
+						<table class="alert-types-table">
+							<tr>
+								<th scope="row">Source</th>
+								<td>
+									
+									   <span>raised by a passive scanner</span> <span>(<a
+										href="https://www.zaproxy.org/docs/alerts/10020/">Anti-clickjacking Header</a>)
+									</span>   
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">CWE ID</th>
+								<td><a
+									href="https://cwe.mitre.org/data/definitions/1021.html">1021</a></td>
+							</tr>
+							<tr>
+								<th scope="row">WASC ID</th>
+								<td>15</td>
+							</tr>
+							<tr>
+								<th scope="row">Reference</th>
+								<td>
+									<ol>
+										<li><a
+											href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/X-Frame-Options">https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/X-Frame-Options</a></li>
+									</ol>
+								</td>
+							</tr>
+						</table>
+					</li>
+					<li
+						id="alert-type-4">
+						<h4>Sub Resource Integrity Attribute Missing</h4>
+						<table class="alert-types-table">
+							<tr>
+								<th scope="row">Source</th>
+								<td>
+									
+									   <span>raised by a passive scanner</span> <span>(<a
+										href="https://www.zaproxy.org/docs/alerts/90003/">Sub Resource Integrity Attribute Missing</a>)
+									</span>   
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">CWE ID</th>
+								<td><a
+									href="https://cwe.mitre.org/data/definitions/345.html">345</a></td>
+							</tr>
+							<tr>
+								<th scope="row">WASC ID</th>
+								<td>15</td>
+							</tr>
+							<tr>
+								<th scope="row">Reference</th>
+								<td>
+									<ol>
+										<li><a
+											href="https://developer.mozilla.org/en-US/docs/Web/Security/Subresource_Integrity">https://developer.mozilla.org/en-US/docs/Web/Security/Subresource_Integrity</a></li>
+									</ol>
+								</td>
+							</tr>
+						</table>
+					</li>
+					<li
+						id="alert-type-5">
+						<h4>Cookie No HttpOnly Flag</h4>
+						<table class="alert-types-table">
+							<tr>
+								<th scope="row">Source</th>
+								<td>
+									
+									   <span>raised by a passive scanner</span> <span>(<a
+										href="https://www.zaproxy.org/docs/alerts/10010/">Cookie No HttpOnly Flag</a>)
+									</span>   
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">CWE ID</th>
+								<td><a
+									href="https://cwe.mitre.org/data/definitions/1004.html">1004</a></td>
+							</tr>
+							<tr>
+								<th scope="row">WASC ID</th>
+								<td>13</td>
+							</tr>
+							<tr>
+								<th scope="row">Reference</th>
+								<td>
+									<ol>
+										<li><a
+											href="https://owasp.org/www-community/HttpOnly">https://owasp.org/www-community/HttpOnly</a></li>
+									</ol>
+								</td>
+							</tr>
+						</table>
+					</li>
+					<li
+						id="alert-type-6">
+						<h4>Cross-Domain JavaScript Source File Inclusion</h4>
+						<table class="alert-types-table">
+							<tr>
+								<th scope="row">Source</th>
+								<td>
+									
+									   <span>raised by a passive scanner</span> <span>(<a
+										href="https://www.zaproxy.org/docs/alerts/10017/">Cross-Domain JavaScript Source File Inclusion</a>)
+									</span>   
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">CWE ID</th>
+								<td><a
+									href="https://cwe.mitre.org/data/definitions/829.html">829</a></td>
+							</tr>
+							<tr>
+								<th scope="row">WASC ID</th>
+								<td>15</td>
+							</tr>
+							
+						</table>
+					</li>
+					<li
+						id="alert-type-7">
+						<h4>Server Leaks Information via &quot;X-Powered-By&quot; HTTP Response Header Field(s)</h4>
+						<table class="alert-types-table">
+							<tr>
+								<th scope="row">Source</th>
+								<td>
+									
+									   <span>raised by a passive scanner</span> <span>(<a
+										href="https://www.zaproxy.org/docs/alerts/10037/">Server Leaks Information via &quot;X-Powered-By&quot; HTTP Response Header Field(s)</a>)
+									</span>   
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">CWE ID</th>
+								<td><a
+									href="https://cwe.mitre.org/data/definitions/497.html">497</a></td>
+							</tr>
+							<tr>
+								<th scope="row">WASC ID</th>
+								<td>13</td>
+							</tr>
+							<tr>
+								<th scope="row">Reference</th>
+								<td>
+									<ol>
+										<li><a
+											href="https://owasp.org/www-project-web-security-testing-guide/v42/4-Web_Application_Security_Testing/01-Information_Gathering/08-Fingerprint_Web_Application_Framework">https://owasp.org/www-project-web-security-testing-guide/v42/4-Web_Application_Security_Testing/01-Information_Gathering/08-Fingerprint_Web_Application_Framework</a></li>
+										<li><a
+											href="https://www.troyhunt.com/shhh-dont-let-your-response-headers/">https://www.troyhunt.com/shhh-dont-let-your-response-headers/</a></li>
+									</ol>
+								</td>
+							</tr>
+						</table>
+					</li>
+					<li
+						id="alert-type-8">
+						<h4>X-Content-Type-Options Header Missing</h4>
+						<table class="alert-types-table">
+							<tr>
+								<th scope="row">Source</th>
+								<td>
+									
+									   <span>raised by a passive scanner</span> <span>(<a
+										href="https://www.zaproxy.org/docs/alerts/10021/">X-Content-Type-Options Header Missing</a>)
+									</span>   
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">CWE ID</th>
+								<td><a
+									href="https://cwe.mitre.org/data/definitions/693.html">693</a></td>
+							</tr>
+							<tr>
+								<th scope="row">WASC ID</th>
+								<td>15</td>
+							</tr>
+							<tr>
+								<th scope="row">Reference</th>
+								<td>
+									<ol>
+										<li><a
+											href="https://learn.microsoft.com/en-us/previous-versions/windows/internet-explorer/ie-developer/compatibility/gg622941(v=vs.85)">https://learn.microsoft.com/en-us/previous-versions/windows/internet-explorer/ie-developer/compatibility/gg622941(v=vs.85)</a></li>
+										<li><a
+											href="https://owasp.org/www-community/Security_Headers">https://owasp.org/www-community/Security_Headers</a></li>
+									</ol>
+								</td>
+							</tr>
+						</table>
+					</li>
+					<li
+						id="alert-type-9">
+						<h4>Information Disclosure - Suspicious Comments</h4>
+						<table class="alert-types-table">
+							<tr>
+								<th scope="row">Source</th>
+								<td>
+									
+									   <span>raised by a passive scanner</span> <span>(<a
+										href="https://www.zaproxy.org/docs/alerts/10027/">Information Disclosure - Suspicious Comments</a>)
+									</span>   
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">CWE ID</th>
+								<td><a
+									href="https://cwe.mitre.org/data/definitions/615.html">615</a></td>
+							</tr>
+							<tr>
+								<th scope="row">WASC ID</th>
+								<td>13</td>
+							</tr>
+							
+						</table>
+					</li>
+					<li
+						id="alert-type-10">
+						<h4>Session Management Response Identified</h4>
+						<table class="alert-types-table">
+							<tr>
+								<th scope="row">Source</th>
+								<td>
+									
+									   <span>raised by a passive scanner</span> <span>(<a
+										href="https://www.zaproxy.org/docs/alerts/10112/">Session Management Response Identified</a>)
+									</span>   
+								</td>
+							</tr>
+							
+							
+							<tr>
+								<th scope="row">Reference</th>
+								<td>
+									<ol>
+										<li><a
+											href="https://www.zaproxy.org/docs/desktop/addons/authentication-helper/session-mgmt-id/">https://www.zaproxy.org/docs/desktop/addons/authentication-helper/session-mgmt-id/</a></li>
+									</ol>
+								</td>
+							</tr>
+						</table>
+					</li>
+				</ol>
+			</section>
+		</section>
+		 
+	</main>
+</body>
+</html>
+
+
+
